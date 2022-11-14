@@ -2,14 +2,9 @@ export default {
   type: 'bubble',
   hero: {
     type: 'image',
-    url: 'https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png',
+    url: 'https://movies.yahoo.com.tw/i/o/production/movies/July2022/jVOJsDMWeL4TwvxZNztG-1077x1539.JPG',
     size: 'full',
-    aspectRatio: '20:13',
-    aspectMode: 'cover',
-    action: {
-      type: 'uri',
-      uri: 'http://linecorp.com/'
-    }
+    aspectMode: 'cover'
   },
   body: {
     type: 'box',
@@ -36,11 +31,12 @@ export default {
                 type: 'text',
                 text: '播出日期',
                 color: '#aaaaaa',
-                size: 'sm'
+                size: 'sm',
+                flex: 2
               },
               {
                 type: 'text',
-                text: 'Miraina Tower, 4-1-6 Shinjuku, Tokyo',
+                text: '2022-11-11',
                 wrap: true,
                 color: '#666666',
                 size: 'sm',
@@ -57,11 +53,12 @@ export default {
                 type: 'text',
                 text: '總集數',
                 color: '#aaaaaa',
-                size: 'sm'
+                size: 'sm',
+                flex: 2
               },
               {
                 type: 'text',
-                text: '10:00 - 23:00',
+                text: '12',
                 wrap: true,
                 color: '#666666',
                 size: 'sm',
@@ -76,13 +73,14 @@ export default {
             contents: [
               {
                 type: 'text',
-                text: '國家/地區',
+                text: 'IMDb分數',
                 color: '#aaaaaa',
-                size: 'sm'
+                size: 'sm',
+                flex: 2
               },
               {
                 type: 'text',
-                text: '10:00 - 23:00',
+                text: ' - ',
                 wrap: true,
                 color: '#666666',
                 size: 'sm',
@@ -99,11 +97,78 @@ export default {
                 type: 'text',
                 text: '導演',
                 color: '#aaaaaa',
-                size: 'sm'
+                size: 'sm',
+                flex: 2
               },
               {
                 type: 'text',
                 text: '10:00 - 23:00',
+                wrap: true,
+                color: '#666666',
+                size: 'sm',
+                flex: 5
+              }
+            ]
+          },
+          {
+            type: 'box',
+            layout: 'baseline',
+            spacing: 'sm',
+            contents: [
+              {
+                type: 'text',
+                text: '編劇',
+                color: '#aaaaaa',
+                size: 'sm',
+                flex: 2
+              },
+              {
+                type: 'text',
+                text: '10:00 - 23:00',
+                wrap: true,
+                color: '#666666',
+                size: 'sm',
+                flex: 5
+              }
+            ]
+          },
+          {
+            type: 'box',
+            layout: 'baseline',
+            spacing: 'sm',
+            contents: [
+              {
+                type: 'text',
+                text: '主演',
+                color: '#aaaaaa',
+                size: 'sm',
+                flex: 2
+              },
+              {
+                type: 'text',
+                text: '10:00 - 23:00',
+                wrap: true,
+                color: '#666666',
+                size: 'sm',
+                flex: 5
+              }
+            ]
+          },
+          {
+            type: 'box',
+            layout: 'baseline',
+            spacing: 'sm',
+            contents: [
+              {
+                type: 'text',
+                text: '串流平台',
+                color: '#aaaaaa',
+                size: 'sm',
+                flex: 2
+              },
+              {
+                type: 'text',
+                text: 'Netflix',
                 wrap: true,
                 color: '#666666',
                 size: 'sm',
