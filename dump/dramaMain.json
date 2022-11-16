@@ -18,7 +18,7 @@
               "contents": [
                 {
                   "type": "image",
-                  "url": "https://movies.yahoo.com.tw/i/o/production/movies/September2022/xqKRLrz4rYtVbir6iHVc-800x1122.jpg",
+                  "url": "https://movies.yahoo.com.tw/i/o/production/movies/October2022/fPut1phCaAq5KgrmWWmn-566x800.jpg",
                   "aspectMode": "cover",
                   "size": "full",
                   "animated": true,
@@ -33,7 +33,7 @@
                     },
                     {
                       "type": "text",
-                      "text": "高斯電子公司",
+                      "text": "青春應援CHEERUP",
                       "size": "xl",
                       "weight": "bold",
                       "color": "#ffffff"
@@ -58,7 +58,7 @@
                     },
                     {
                       "type": "text",
-                      "text": "2022-09-30",
+                      "text": "2022-10-03",
                       "wrap": true,
                       "color": "#ffffff",
                       "size": "sm",
@@ -80,7 +80,7 @@
                     },
                     {
                       "type": "text",
-                      "text": "12集",
+                      "text": "16集",
                       "wrap": true,
                       "color": "#ffffff",
                       "size": "sm",
@@ -124,7 +124,7 @@
                     },
                     {
                       "type": "text",
-                      "text": "朴俊秀",
+                      "text": "韓泰燮",
                       "wrap": true,
                       "color": "#ffffff",
                       "size": "sm",
@@ -172,7 +172,7 @@
                       "color": "#ffffff",
                       "size": "sm",
                       "flex": 5,
-                      "text": "郭東延、高聖熙、裴賢聖、姜旻兒"
+                      "text": "韓智賢、裴仁爀、金賢鎮、張圭悧、李恩泉、梁東根"
                     }
                   ]
                 },
@@ -190,7 +190,7 @@
                     },
                     {
                       "type": "text",
-                      "text": "MyVideo、LINE TV、Hami Video",
+                      "text": "MyVideo、Hami Video、LiTV 線上影視",
                       "wrap": true,
                       "color": "#ffffff",
                       "size": "sm",
@@ -212,7 +212,7 @@
                           "align": "center",
                           "size": "md",
                           "color": "#ffffff",
-                          "offsetTop": "4px"
+                          "offsetTop": "5px"
                         }
                       ],
                       "height": "30px",
@@ -235,7 +235,7 @@
                           "align": "center",
                           "size": "md",
                           "color": "#ffffff",
-                          "offsetTop": "4px"
+                          "offsetTop": "5px"
                         }
                       ],
                       "height": "30px",
@@ -244,7 +244,7 @@
                       "action": {
                         "type": "message",
                         "label": "action",
-                        "text": "《高斯電子公司》是韓國電視台ENA播出的職場喜劇劇，本劇改編自人氣網漫作家郭百洙作家的同名作品，由《音樂之神2》的朴俊秀導演執導。劇情講述跨國企業「高斯電子」的辦公室喜劇，真實地描繪了只要是上班族都會產生共鳴的悲歡，以及從中萌發的愛情和友情。郭東延在劇中首次擔綱男主角，飾演高斯電子行銷三部的職員李相植，不懂得察言觀色，只要違背他的常識時，就會堅持自己的信念，因此容易成為麻煩製造者，是部門的核爆彈，被主管車娜萊（高聖熙飾）視為眼中釘。..."
+                        "text": "《青春應援 CHEER UP》是韓國電視台播出的青春校園劇，由《金牌救援》韓泰燮導演與《VIP》車海元編劇打造。劇情以有著50年傳統的大學社團「啦啦隊」為背景，但該社團逐漸落沒，社員們為了讓社團起死回生，展開了一連串的行動，雖然充滿青春與心動感，但也加入了懸疑神秘的元素…關於20年前系上啦啦隊流傳下來的神秘預言。故事將聚焦在20代人們心動的初戀、還有熱力四射的啦啦隊舞台。..."
                       },
                       "width": "48%",
                       "position": "absolute",

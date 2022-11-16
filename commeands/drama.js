@@ -37,7 +37,6 @@ export default async (event) => {
       }
       // else event.reply('查無資料，請更換檢索條件')
     }
-    console.log(dramaNums)
   } catch (error) {
     event.reply('編號查詢error')
     console.error(error)
@@ -49,8 +48,8 @@ export default async (event) => {
     for (let i = 0; i < dramaNums.length; i++) {
       if (event.message.text === dramaNums[i].name) Num = dramaNums[i].num
     }
-    if (Num === '') event.reply('無法查詢此劇資訊')
-    console.log(Num)
+    if (Num === '') event.reply('無法查詢或輸入錯誤，請重新輸入')
+    console.log('https://movies.yahoo.com.tw/movieinfo_main/' + Num)
     const { data } = await axios.get('https://movies.yahoo.com.tw/movieinfo_main/' + Num)
     const $ = cheerio.load(data)
     const dramaMain = []
@@ -75,7 +74,14 @@ export default async (event) => {
       replyFlex2.body.contents[0].contents[7].contents[1].text = $('.movie_intro_list').eq(2).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
     }
     // OTT
-    replyFlex2.body.contents[0].contents[8].contents[1].text = $('.evaluate_txt_finish').text().trim()
+    replyFlex2.body.contents[0].contents[8].contents[1].text = $('.evaluate_txt_finish').text().trim() === '' ? '-' : $('.evaluate_txt_finish').text().trim()
+    // 影劇分類
+    // let type = ''
+    // for (let i = 0; i < $('.level_name_box').find('.level_name').length; i++) {
+    //   type = $('.level_name_box').find('.level_name').eq(i).text().trim()
+    //   type += type + ' '
+    //   replyFlex2.body.contents[0].contents[9].contents[0].action.text = type
+    // }
     // 劇情簡介
     replyFlex2.body.contents[0].contents[9].contents[1].action.text = $('#story').text().trim().slice(0, 297) + '...'
 

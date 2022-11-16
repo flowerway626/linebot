@@ -8,10 +8,10 @@ export default async (event) => {
   try {
     const country = event.message.text.substr(0, 2)
     let sort = ''
-    event.message.text.substr(-2, 2) === '人氣' ? sort = '&sort=popular' : sort = ''
+    event.message.text.includes('人氣') ? sort = '&sort=popular' : sort = ''
     // encodeURI
-    const url = 'https://movies.yahoo.com.tw/category.html?region_id=' + country + '&type_id=1' + sort
-    const { data } = await axios.get(url)
+    const { data } = await axios.get(`https://movies.yahoo.com.tw/category.html?region_id=${country}&type_id=1${sort}`)
+    console.log(`https://movies.yahoo.com.tw/category.html?region_id=${country}&type_id=1${sort}`)
     const $ = cheerio.load(data)
     const dramas = []
     if ($('.box_inner').find('ul').text() !== '') {
