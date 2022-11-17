@@ -18,10 +18,8 @@
               "contents": [
                 {
                   "type": "image",
-                  "url": "https://movies.yahoo.com.tw/i/o/production/movies/October2022/fPut1phCaAq5KgrmWWmn-566x800.jpg",
                   "aspectMode": "cover",
                   "size": "full",
-                  "animated": true,
                   "aspectRatio": "9:12"
                 },
                 {
@@ -33,7 +31,7 @@
                     },
                     {
                       "type": "text",
-                      "text": "青春應援CHEERUP",
+                      "text": "",
                       "size": "xl",
                       "weight": "bold",
                       "color": "#ffffff"
@@ -52,13 +50,13 @@
                     {
                       "type": "text",
                       "text": "播出日期",
-                      "color": "#aaaaaa",
+                      "color": "#E4F2ED",
                       "size": "sm",
                       "flex": 2
                     },
                     {
                       "type": "text",
-                      "text": "2022-10-03",
+                      "text": "-",
                       "wrap": true,
                       "color": "#ffffff",
                       "size": "sm",
@@ -74,13 +72,13 @@
                     {
                       "type": "text",
                       "text": "總集數",
-                      "color": "#aaaaaa",
+                      "color": "#E4F2ED",
                       "size": "sm",
                       "flex": 2
                     },
                     {
                       "type": "text",
-                      "text": "16集",
+                      "text": "-",
                       "wrap": true,
                       "color": "#ffffff",
                       "size": "sm",
@@ -96,7 +94,7 @@
                     {
                       "type": "text",
                       "text": "IMDb分數",
-                      "color": "#aaaaaa",
+                      "color": "#E4F2ED",
                       "size": "sm",
                       "flex": 2
                     },
@@ -118,13 +116,13 @@
                     {
                       "type": "text",
                       "text": "導演",
-                      "color": "#aaaaaa",
+                      "color": "#E4F2ED",
                       "size": "sm",
                       "flex": 2
                     },
                     {
                       "type": "text",
-                      "text": "韓泰燮",
+                      "text": "",
                       "wrap": true,
                       "color": "#ffffff",
                       "size": "sm",
@@ -140,13 +138,13 @@
                     {
                       "type": "text",
                       "text": "編劇",
-                      "color": "#aaaaaa",
+                      "color": "#E4F2ED",
                       "size": "sm",
                       "flex": 2
                     },
                     {
                       "type": "text",
-                      "text": "-",
+                      "text": "",
                       "wrap": true,
                       "color": "#ffffff",
                       "size": "sm",
@@ -162,7 +160,7 @@
                     {
                       "type": "text",
                       "text": "主演",
-                      "color": "#aaaaaa",
+                      "color": "#E4F2ED",
                       "size": "sm",
                       "flex": 2
                     },
@@ -172,7 +170,7 @@
                       "color": "#ffffff",
                       "size": "sm",
                       "flex": 5,
-                      "text": "韓智賢、裴仁爀、金賢鎮、張圭悧、李恩泉、梁東根"
+                      "text": ""
                     }
                   ]
                 },
@@ -184,13 +182,13 @@
                     {
                       "type": "text",
                       "text": "串流平台",
-                      "color": "#aaaaaa",
+                      "color": "#E4F2ED",
                       "size": "sm",
                       "flex": 2
                     },
                     {
                       "type": "text",
-                      "text": "MyVideo、Hami Video、LiTV 線上影視",
+                      "text": "-",
                       "wrap": true,
                       "color": "#ffffff",
                       "size": "sm",
@@ -203,67 +201,31 @@
                   "layout": "vertical",
                   "contents": [
                     {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "影劇類型",
-                          "align": "center",
-                          "size": "md",
-                          "color": "#ffffff",
-                          "offsetTop": "5px"
-                        }
-                      ],
-                      "height": "30px",
-                      "borderWidth": "1px",
-                      "borderColor": "#999999",
-                      "action": {
-                        "type": "message",
-                        "label": "action",
-                        "text": "劇情"
-                      },
-                      "width": "48%"
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "劇情簡介",
-                          "align": "center",
-                          "size": "md",
-                          "color": "#ffffff",
-                          "offsetTop": "5px"
-                        }
-                      ],
-                      "height": "30px",
-                      "borderWidth": "1px",
-                      "borderColor": "#999999",
-                      "action": {
-                        "type": "message",
-                        "label": "action",
-                        "text": "《青春應援 CHEER UP》是韓國電視台播出的青春校園劇，由《金牌救援》韓泰燮導演與《VIP》車海元編劇打造。劇情以有著50年傳統的大學社團「啦啦隊」為背景，但該社團逐漸落沒，社員們為了讓社團起死回生，展開了一連串的行動，雖然充滿青春與心動感，但也加入了懸疑神秘的元素…關於20年前系上啦啦隊流傳下來的神秘預言。故事將聚焦在20代人們心動的初戀、還有熱力四射的啦啦隊舞台。..."
-                      },
-                      "width": "48%",
-                      "position": "absolute",
-                      "offsetEnd": "0px"
+                      "type": "text",
+                      "text": "劇情簡介",
+                      "align": "center",
+                      "size": "md",
+                      "color": "#E4F2ED",
+                      "offsetTop": "3px"
                     }
                   ],
-                  "position": "relative"
+                  "height": "30px",
+                  "borderWidth": "1px",
+                  "borderColor": "#999999",
+                  "action": {
+                    "type": "message",
+                    "label": "action",
+                    "text": ""
+                  },
+                  "offsetEnd": "0px",
+                  "justifyContent": "center",
+                  "alignItems": "center"
                 }
               ],
               "paddingAll": "0px"
             }
           ],
-          "backgroundColor": "#03303Acc",
-          "background": {
-            "type": "linearGradient",
-            "angle": "0deg",
-            "startColor": "#03303Acc",
-            "endColor": "#00000000"
-          },
+          "backgroundColor": "#456173",
           "paddingTop": "5px",
           "paddingBottom": "10px"
         }

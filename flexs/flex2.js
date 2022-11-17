@@ -12,10 +12,9 @@ export default {
         contents: [
           {
             type: 'image',
-            url: 'https://movies.yahoo.com.tw/i/o/production/movies/June2022/Z1sncIugXKH0UkO1WHeC-1143x1672.jpg',
+            url: 'https://movies.yahoo.com.tw/i/o/production/movies/May2022/hFGZy15DmOCba46d7qRE-400x600.jpg',
             aspectMode: 'cover',
             size: 'full',
-            animated: true,
             aspectRatio: '9:12'
           },
           {
@@ -27,7 +26,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '還魂 ',
+                text: '金田一少年之事件簿',
                 size: 'xl',
                 weight: 'bold',
                 color: '#ffffff'
@@ -46,13 +45,13 @@ export default {
               {
                 type: 'text',
                 text: '播出日期',
-                color: '#aaaaaa',
+                color: '#E4F2ED',
                 size: 'sm',
                 flex: 2
               },
               {
                 type: 'text',
-                text: '2022-01-21',
+                text: '2022-06-01',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -68,13 +67,13 @@ export default {
               {
                 type: 'text',
                 text: '總集數',
-                color: '#aaaaaa',
+                color: '#E4F2ED',
                 size: 'sm',
                 flex: 2
               },
               {
                 type: 'text',
-                text: '10集',
+                text: '5集',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -90,13 +89,13 @@ export default {
               {
                 type: 'text',
                 text: 'IMDb分數',
-                color: '#aaaaaa',
+                color: '#E4F2ED',
                 size: 'sm',
                 flex: 2
               },
               {
                 type: 'text',
-                text: '8.6',
+                text: '-',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -112,13 +111,13 @@ export default {
               {
                 type: 'text',
                 text: '導演',
-                color: '#aaaaaa',
+                color: '#E4F2ED',
                 size: 'sm',
                 flex: 2
               },
               {
                 type: 'text',
-                text: '朴俊和(Park Jun Hwa)',
+                text: '丸谷俊平、木村尚史',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -134,13 +133,13 @@ export default {
               {
                 type: 'text',
                 text: '編劇',
-                color: '#aaaaaa',
+                color: '#E4F2ED',
                 size: 'sm',
                 flex: 2
               },
               {
                 type: 'text',
-                text: '洪氏姊妹（洪貞恩、洪美蘭）',
+                text: '大石哲也、川邊優子',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -156,7 +155,7 @@ export default {
               {
                 type: 'text',
                 text: '主演',
-                color: '#aaaaaa',
+                color: '#E4F2ED',
                 size: 'sm',
                 flex: 2
               },
@@ -166,7 +165,7 @@ export default {
                 color: '#ffffff',
                 size: 'sm',
                 flex: 5,
-                text: '李宰旭(Lee Jae Wook) 、 庭沼珉(Jung So Min) '
+                text: '道枝駿佑、上白石萌歌、澤村一樹'
               }
             ]
           },
@@ -178,13 +177,13 @@ export default {
               {
                 type: 'text',
                 text: '串流平台',
-                color: '#aaaaaa',
+                color: '#E4F2ED',
                 size: 'sm',
                 flex: 2
               },
               {
                 type: 'text',
-                text: 'friDay影音',
+                text: 'Disney+',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -197,67 +196,31 @@ export default {
             layout: 'vertical',
             contents: [
               {
-                type: 'box',
-                layout: 'vertical',
-                contents: [
-                  {
-                    type: 'text',
-                    text: '影劇類型',
-                    align: 'center',
-                    size: 'md',
-                    color: '#ffffff',
-                    offsetTop: '5px'
-                  }
-                ],
-                height: '30px',
-                borderWidth: '1px',
-                borderColor: '#999999',
-                action: {
-                  type: 'message',
-                  label: 'action',
-                  text: '劇情'
-                },
-                width: '48%'
-              },
-              {
-                type: 'box',
-                layout: 'vertical',
-                contents: [
-                  {
-                    type: 'text',
-                    text: '劇情簡介',
-                    align: 'center',
-                    size: 'md',
-                    color: '#ffffff',
-                    offsetTop: '5px'
-                  }
-                ],
-                height: '30px',
-                borderWidth: '1px',
-                borderColor: '#999999',
-                action: {
-                  type: 'message',
-                  label: 'action',
-                  text: '劇情'
-                },
-                width: '48%',
-                position: 'absolute',
-                offsetEnd: '0px'
+                type: 'text',
+                text: '劇情簡介',
+                align: 'center',
+                size: 'md',
+                color: '#E4F2ED',
+                offsetTop: '3px'
               }
             ],
-            position: 'relative'
+            height: '30px',
+            borderWidth: '1px',
+            borderColor: '#999999',
+            action: {
+              type: 'message',
+              label: 'action',
+              text: '金田一一是傳奇私人偵探金田一耕助的外孫，背負著眾人期待，面對市區不斷發生看似離奇的殺人案，擁有超高智商的金田一一屢屢成功破案。雖然金田一一只是一名高中生，卻能憑藉優秀的邏輯推理能力，解決其他偵探無法偵破的案件。原本只有青梅竹馬好友七瀨美雪從旁協助，但後來金田一一的能力引起東京警視廳警部的注意，此後三人攜手合作破案，將罪犯緝拿歸案。...'
+            },
+            offsetEnd: '0px',
+            justifyContent: 'center',
+            alignItems: 'center'
           }
         ],
         paddingAll: '0px'
       }
     ],
-    backgroundColor: '#03303Acc',
-    background: {
-      type: 'linearGradient',
-      angle: '0deg',
-      startColor: '#03303Acc',
-      endColor: '#00000000'
-    },
+    backgroundColor: '#456173',
     paddingTop: '5px',
     paddingBottom: '10px'
   }

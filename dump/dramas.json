@@ -12,7 +12,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/ilsuDyAH616UV7m3fZvJ-800x1200.jpg",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/October2022/IxHB9kIJcxx4x3hBCHou-800x1127.jpg",
               "size": "full",
               "aspectMode": "cover",
               "aspectRatio": "8:10",
@@ -20,8 +20,40 @@
               "action": {
                 "type": "message",
                 "label": "action",
-                "text": "爭鋒相辯"
+                "text": "她和她的她"
               }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "台灣 最新",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
             },
             {
               "type": "box",
@@ -54,7 +86,7 @@
                       "contents": [
                         {
                           "type": "text",
-                          "text": "爭鋒相辯",
+                          "text": "她和她的她",
                           "size": "xl",
                           "color": "#ffffff",
                           "weight": "bold"
@@ -80,6 +112,35 @@
                           ],
                           "flex": 0,
                           "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.1",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
                         }
                       ]
                     }
@@ -105,7 +166,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/GYyF4mt0SntbJ5NogTsw-721x1031.jpg",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/October2022/NswZrulzTrWWAOIvaioQ-800x1143.jpg",
               "size": "full",
               "aspectMode": "cover",
               "aspectRatio": "8:10",
@@ -113,8 +174,40 @@
               "action": {
                 "type": "message",
                 "label": "action",
-                "text": "月水金火木土"
+                "text": "我的牙想你"
               }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "台灣 最新",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
             },
             {
               "type": "box",
@@ -147,7 +240,7 @@
                       "contents": [
                         {
                           "type": "text",
-                          "text": "月水金火木土",
+                          "text": "我的牙想你",
                           "size": "xl",
                           "color": "#ffffff",
                           "weight": "bold"
@@ -173,6 +266,35 @@
                           ],
                           "flex": 0,
                           "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.2",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
                         }
                       ]
                     }
@@ -198,7 +320,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/8nH59HZ34je9VoGR4bqB-800x1200.jpg",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/r1SqDW3ugpm1MSusRRA2-800x1200.jpg",
               "size": "full",
               "aspectMode": "cover",
               "aspectRatio": "8:10",
@@ -206,8 +328,40 @@
               "action": {
                 "type": "message",
                 "label": "action",
-                "text": "人生勝利組（金湯匙）"
+                "text": "仙女姐姐來我家"
               }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "台灣 最新",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
             },
             {
               "type": "box",
@@ -240,7 +394,7 @@
                       "contents": [
                         {
                           "type": "text",
-                          "text": "人生勝利組（金湯匙）",
+                          "text": "仙女姐姐來我家",
                           "size": "xl",
                           "color": "#ffffff",
                           "weight": "bold"
@@ -266,6 +420,35 @@
                           ],
                           "flex": 0,
                           "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.3",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
                         }
                       ]
                     }
@@ -291,7 +474,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/isI7kMWdmIJkQ1RtABBt-667x1000.jpg",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/pzcyqDp1lcVQB5dyI7MX-800x1200.jpg",
               "size": "full",
               "aspectMode": "cover",
               "aspectRatio": "8:10",
@@ -299,101 +482,40 @@
               "action": {
                 "type": "message",
                 "label": "action",
-                "text": "千元律師"
+                "text": "台北女子圖鑑"
               }
             },
             {
               "type": "box",
               "layout": "vertical",
-              "contents": [],
-              "position": "absolute",
-              "background": {
-                "type": "linearGradient",
-                "angle": "0deg",
-                "endColor": "#00000000",
-                "startColor": "#00000099"
-              },
-              "width": "100%",
-              "height": "40%",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px"
-            },
-            {
-              "type": "box",
-              "layout": "horizontal",
               "contents": [
                 {
                   "type": "box",
-                  "layout": "vertical",
+                  "layout": "baseline",
                   "contents": [
                     {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "千元律師",
-                          "size": "xl",
-                          "color": "#ffffff",
-                          "weight": "bold"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "box",
-                          "layout": "baseline",
-                          "contents": [
-                            {
-                              "type": "text",
-                              "text": "第一季",
-                              "color": "#a9a9a9",
-                              "size": "sm",
-                              "flex": 0,
-                              "align": "end"
-                            }
-                          ],
-                          "flex": 0,
-                          "spacing": "lg"
-                        }
-                      ]
+                      "type": "text",
+                      "text": "台灣 最新",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
                     }
                   ],
-                  "spacing": "xs"
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
                 }
               ],
               "position": "absolute",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px",
-              "paddingAll": "20px"
-            }
-          ],
-          "paddingAll": "0px"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/fLVnrqPD9LQ57vhdHNkF-800x1185.jpg",
-              "size": "full",
-              "aspectMode": "cover",
-              "aspectRatio": "8:10",
-              "gravity": "center",
-              "action": {
-                "type": "message",
-                "label": "action",
-                "text": "The Empire：法之帝國"
-              }
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
             },
             {
               "type": "box",
@@ -426,7 +548,7 @@
                       "contents": [
                         {
                           "type": "text",
-                          "text": "The Empire：法之帝國",
+                          "text": "台北女子圖鑑",
                           "size": "xl",
                           "color": "#ffffff",
                           "weight": "bold"
@@ -452,657 +574,35 @@
                           ],
                           "flex": 0,
                           "spacing": "lg"
-                        }
-                      ]
-                    }
-                  ],
-                  "spacing": "xs"
-                }
-              ],
-              "position": "absolute",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px",
-              "paddingAll": "20px"
-            }
-          ],
-          "paddingAll": "0px"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/xqKRLrz4rYtVbir6iHVc-800x1122.jpg",
-              "size": "full",
-              "aspectMode": "cover",
-              "aspectRatio": "8:10",
-              "gravity": "center",
-              "action": {
-                "type": "message",
-                "label": "action",
-                "text": "高斯電子公司"
-              }
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [],
-              "position": "absolute",
-              "background": {
-                "type": "linearGradient",
-                "angle": "0deg",
-                "endColor": "#00000000",
-                "startColor": "#00000099"
-              },
-              "width": "100%",
-              "height": "40%",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px"
-            },
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "高斯電子公司",
-                          "size": "xl",
-                          "color": "#ffffff",
-                          "weight": "bold"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
+                        },
                         {
                           "type": "box",
-                          "layout": "baseline",
+                          "layout": "vertical",
                           "contents": [
                             {
-                              "type": "text",
-                              "text": "第一季",
-                              "color": "#a9a9a9",
-                              "size": "sm",
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.4",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
                               "flex": 0,
-                              "align": "end"
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
                             }
                           ],
-                          "flex": 0,
-                          "spacing": "lg"
-                        }
-                      ]
-                    }
-                  ],
-                  "spacing": "xs"
-                }
-              ],
-              "position": "absolute",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px",
-              "paddingAll": "20px"
-            }
-          ],
-          "paddingAll": "0px"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/October2022/fPut1phCaAq5KgrmWWmn-566x800.jpg",
-              "size": "full",
-              "aspectMode": "cover",
-              "aspectRatio": "8:10",
-              "gravity": "center",
-              "action": {
-                "type": "message",
-                "label": "action",
-                "text": "青春應援 CHEER UP"
-              }
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [],
-              "position": "absolute",
-              "background": {
-                "type": "linearGradient",
-                "angle": "0deg",
-                "endColor": "#00000000",
-                "startColor": "#00000099"
-              },
-              "width": "100%",
-              "height": "40%",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px"
-            },
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "青春應援 CHEER UP",
-                          "size": "xl",
-                          "color": "#ffffff",
-                          "weight": "bold"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "box",
-                          "layout": "baseline",
-                          "contents": [
-                            {
-                              "type": "text",
-                              "text": "第一季",
-                              "color": "#a9a9a9",
-                              "size": "sm",
-                              "flex": 0,
-                              "align": "end"
-                            }
-                          ],
-                          "flex": 0,
-                          "spacing": "lg"
-                        }
-                      ]
-                    }
-                  ],
-                  "spacing": "xs"
-                }
-              ],
-              "position": "absolute",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px",
-              "paddingAll": "20px"
-            }
-          ],
-          "paddingAll": "0px"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/October2022/9CBdPwRjrrV2gnSNgpt7-702x1000.jpg",
-              "size": "full",
-              "aspectMode": "cover",
-              "aspectRatio": "8:10",
-              "gravity": "center",
-              "action": {
-                "type": "message",
-                "label": "action",
-                "text": "凍死的戀愛"
-              }
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [],
-              "position": "absolute",
-              "background": {
-                "type": "linearGradient",
-                "angle": "0deg",
-                "endColor": "#00000000",
-                "startColor": "#00000099"
-              },
-              "width": "100%",
-              "height": "40%",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px"
-            },
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "凍死的戀愛",
-                          "size": "xl",
-                          "color": "#ffffff",
-                          "weight": "bold"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "box",
-                          "layout": "baseline",
-                          "contents": [
-                            {
-                              "type": "text",
-                              "text": "第一季",
-                              "color": "#a9a9a9",
-                              "size": "sm",
-                              "flex": 0,
-                              "align": "end"
-                            }
-                          ],
-                          "flex": 0,
-                          "spacing": "lg"
-                        }
-                      ]
-                    }
-                  ],
-                  "spacing": "xs"
-                }
-              ],
-              "position": "absolute",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px",
-              "paddingAll": "20px"
-            }
-          ],
-          "paddingAll": "0px"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/October2022/rxR8ElgUk9fZPU0xv2hJ-1000x1414.jpg",
-              "size": "full",
-              "aspectMode": "cover",
-              "aspectRatio": "8:10",
-              "gravity": "center",
-              "action": {
-                "type": "message",
-                "label": "action",
-                "text": "真劍勝負"
-              }
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [],
-              "position": "absolute",
-              "background": {
-                "type": "linearGradient",
-                "angle": "0deg",
-                "endColor": "#00000000",
-                "startColor": "#00000099"
-              },
-              "width": "100%",
-              "height": "40%",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px"
-            },
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "真劍勝負",
-                          "size": "xl",
-                          "color": "#ffffff",
-                          "weight": "bold"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "box",
-                          "layout": "baseline",
-                          "contents": [
-                            {
-                              "type": "text",
-                              "text": "第一季",
-                              "color": "#a9a9a9",
-                              "size": "sm",
-                              "flex": 0,
-                              "align": "end"
-                            }
-                          ],
-                          "flex": 0,
-                          "spacing": "lg"
-                        }
-                      ]
-                    }
-                  ],
-                  "spacing": "xs"
-                }
-              ],
-              "position": "absolute",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px",
-              "paddingAll": "20px"
-            }
-          ],
-          "paddingAll": "0px"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/m1B7GYHKvnkWTQ0c8f6y-1000x1463.jpg",
-              "size": "full",
-              "aspectMode": "cover",
-              "aspectRatio": "8:10",
-              "gravity": "center",
-              "action": {
-                "type": "message",
-                "label": "action",
-                "text": "天外謎蹤"
-              }
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [],
-              "position": "absolute",
-              "background": {
-                "type": "linearGradient",
-                "angle": "0deg",
-                "endColor": "#00000000",
-                "startColor": "#00000099"
-              },
-              "width": "100%",
-              "height": "40%",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px"
-            },
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "天外謎蹤",
-                          "size": "xl",
-                          "color": "#ffffff",
-                          "weight": "bold"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "box",
-                          "layout": "baseline",
-                          "contents": [
-                            {
-                              "type": "text",
-                              "text": "第一季",
-                              "color": "#a9a9a9",
-                              "size": "sm",
-                              "flex": 0,
-                              "align": "end"
-                            }
-                          ],
-                          "flex": 0,
-                          "spacing": "lg"
-                        }
-                      ]
-                    }
-                  ],
-                  "spacing": "xs"
-                }
-              ],
-              "position": "absolute",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px",
-              "paddingAll": "20px"
-            }
-          ],
-          "paddingAll": "0px"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/November2022/7n06QFERSBQyox84S4qm-750x1068.jpg",
-              "size": "full",
-              "aspectMode": "cover",
-              "aspectRatio": "8:10",
-              "gravity": "center",
-              "action": {
-                "type": "message",
-                "label": "action",
-                "text": "魔女的遊戲"
-              }
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [],
-              "position": "absolute",
-              "background": {
-                "type": "linearGradient",
-                "angle": "0deg",
-                "endColor": "#00000000",
-                "startColor": "#00000099"
-              },
-              "width": "100%",
-              "height": "40%",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px"
-            },
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "魔女的遊戲",
-                          "size": "xl",
-                          "color": "#ffffff",
-                          "weight": "bold"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "box",
-                          "layout": "baseline",
-                          "contents": [
-                            {
-                              "type": "text",
-                              "text": "第一季",
-                              "color": "#a9a9a9",
-                              "size": "sm",
-                              "flex": 0,
-                              "align": "end"
-                            }
-                          ],
-                          "flex": 0,
-                          "spacing": "lg"
-                        }
-                      ]
-                    }
-                  ],
-                  "spacing": "xs"
-                }
-              ],
-              "position": "absolute",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px",
-              "paddingAll": "20px"
-            }
-          ],
-          "paddingAll": "0px"
-        }
-      },
-      {
-        "type": "bubble",
-        "body": {
-          "type": "box",
-          "layout": "vertical",
-          "contents": [
-            {
-              "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/October2022/5Cs31Y9r5rIaLFRCf7Ty-700x1037.jpg",
-              "size": "full",
-              "aspectMode": "cover",
-              "aspectRatio": "8:10",
-              "gravity": "center",
-              "action": {
-                "type": "message",
-                "label": "action",
-                "text": "Yonder"
-              }
-            },
-            {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [],
-              "position": "absolute",
-              "background": {
-                "type": "linearGradient",
-                "angle": "0deg",
-                "endColor": "#00000000",
-                "startColor": "#00000099"
-              },
-              "width": "100%",
-              "height": "40%",
-              "offsetBottom": "0px",
-              "offsetStart": "0px",
-              "offsetEnd": "0px"
-            },
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Yonder",
-                          "size": "xl",
-                          "color": "#ffffff",
-                          "weight": "bold"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "horizontal",
-                      "contents": [
-                        {
-                          "type": "box",
-                          "layout": "baseline",
-                          "contents": [
-                            {
-                              "type": "text",
-                              "text": "第一季",
-                              "color": "#a9a9a9",
-                              "size": "sm",
-                              "flex": 0,
-                              "align": "end"
-                            }
-                          ],
-                          "flex": 0,
-                          "spacing": "lg"
+                          "position": "absolute",
+                          "offsetEnd": "0px"
                         }
                       ]
                     }

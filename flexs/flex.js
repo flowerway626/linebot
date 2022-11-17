@@ -6,7 +6,7 @@ export default {
     contents: [
       {
         type: 'image',
-        url: 'https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip3.jpg',
+        url: 'https://movies.yahoo.com.tw/i/r/w420/production/movies/June2022/EYSyqlKZVN1EFARUkSdA-800x1142.jpg',
         size: 'full',
         aspectMode: 'cover',
         aspectRatio: '8:10',
@@ -14,8 +14,40 @@ export default {
         action: {
           type: 'message',
           label: 'action',
-          text: 'drama'
+          text: '怪奇物語'
         }
+      },
+      {
+        type: 'box',
+        layout: 'vertical',
+        contents: [
+          {
+            type: 'box',
+            layout: 'baseline',
+            contents: [
+              {
+                type: 'text',
+                text: '美國 人氣',
+                color: '#E4F2ED',
+                size: 'md',
+                flex: 0,
+                align: 'end',
+                weight: 'bold'
+              }
+            ],
+            flex: 0,
+            spacing: 'lg',
+            backgroundColor: '#BAD99C99',
+            alignItems: 'flex-end',
+            paddingAll: '3px',
+            cornerRadius: '20px',
+            paddingStart: '8px',
+            paddingEnd: '8px'
+          }
+        ],
+        position: 'absolute',
+        offsetTop: '18px',
+        offsetEnd: '18px'
       },
       {
         type: 'box',
@@ -48,7 +80,7 @@ export default {
                 contents: [
                   {
                     type: 'text',
-                    text: 'dramaName',
+                    text: '怪奇物語',
                     size: 'xl',
                     color: '#ffffff',
                     weight: 'bold'
@@ -65,7 +97,7 @@ export default {
                     contents: [
                       {
                         type: 'text',
-                        text: 'season',
+                        text: '第四季',
                         color: '#a9a9a9',
                         size: 'sm',
                         flex: 0,
@@ -74,6 +106,35 @@ export default {
                     ],
                     flex: 0,
                     spacing: 'lg'
+                  },
+                  {
+                    type: 'box',
+                    layout: 'vertical',
+                    contents: [
+                      {
+                        type: 'box',
+                        layout: 'baseline',
+                        contents: [
+                          {
+                            type: 'text',
+                            text: 'NO.1',
+                            color: '#E4F2ED',
+                            size: 'sm',
+                            flex: 0,
+                            align: 'end'
+                          }
+                        ],
+                        flex: 0,
+                        spacing: 'lg',
+                        backgroundColor: '#45617399',
+                        paddingAll: '2px',
+                        cornerRadius: '20px',
+                        paddingStart: '8px',
+                        paddingEnd: '8px'
+                      }
+                    ],
+                    position: 'absolute',
+                    offsetEnd: '0px'
                   }
                 ]
               }

@@ -25,7 +25,8 @@ bot.on('message', event => {
       // else if (event.message.text === '使用說明') event.reply(flexNew)
 
       // 當輸入內容不超過 20 字時 (排除發送劇情介紹觸發事件)
-      else if (event.message.text.length < 20) drama(event)
+      else if (event.message.text.length < 20 &&
+        event.message.text.includes(countrys[i]) === false) drama(event)
     }
   }
 })

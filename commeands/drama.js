@@ -21,14 +21,14 @@ export default async (event) => {
       const $$ = cheerio.load(data2)
       if ($('.box_inner').find('ul').text() !== '') {
         dramaNums.push({ name: '', num: '' })
-        $('.category-list li').each(function (i) {
+        $('.category-list li').each(function () {
           dramaNums.push({ name: '', num: '' })
           dramaNums[dramaNumsEnd].name = $(this).find('.movielist_info h2').text().trim()
           dramaNums[dramaNumsEnd].num = $(this).find('a').attr('href').substr(-5)
           dramaNumsEnd += 1
         })
         dramaNums.push({ name: '', num: '' })
-        $$('.category-list li').each(function (i) {
+        $$('.category-list li').each(function () {
           dramaNums.push({ name: '', num: '' })
           dramaNums[dramaNumsEnd].name = $$(this).find('.movielist_info h2').text().trim()
           dramaNums[dramaNumsEnd].num = $$(this).find('a').attr('href').substr(-5)
@@ -41,6 +41,7 @@ export default async (event) => {
     event.reply('編號查詢error')
     console.error(error)
   }
+  console.log(dramaNums)
 
   // 該部影劇詳細資訊
   try {
@@ -48,21 +49,21 @@ export default async (event) => {
     for (let i = 0; i < dramaNums.length; i++) {
       if (event.message.text === dramaNums[i].name) Num = dramaNums[i].num
     }
-    if (Num === '') event.reply('無法查詢或輸入錯誤，請重新輸入')
+    console.log(Num)
     console.log('https://movies.yahoo.com.tw/movieinfo_main/' + Num)
     const { data } = await axios.get('https://movies.yahoo.com.tw/movieinfo_main/' + Num)
     const $ = cheerio.load(data)
     const dramaMain = []
     const replyFlex2 = JSON.parse(JSON.stringify(flex2))
-    replyFlex2.body.contents[0].contents[0].url = $('.movie_intro_foto').find('img').attr('src')
+    replyFlex2.body.contents[0].contents[0].url = $('.movie_intro_foto img').attr('src')
     // 劇名
-    replyFlex2.body.contents[0].contents[1].contents[1].text = $('.movie_intro_info').find('h1').text().replace(/[\n ]/g, '').slice(0, -6)
+    replyFlex2.body.contents[0].contents[1].contents[1].text = $('.movie_intro_info h1').text().replace(/[\n ]/g, '').slice(0, -6)
     // 日期
-    replyFlex2.body.contents[0].contents[2].contents[1].text = $('.movie_intro_info_r').find('span').eq(1).text().substr(5)
+    replyFlex2.body.contents[0].contents[2].contents[1].text = $('.movie_intro_info_r span').text().includes('播出日期') === true ? $('.movie_intro_info_r span').eq(1).text().substr(5) : '-'
     // 集數
-    replyFlex2.body.contents[0].contents[3].contents[1].text = $('.movie_intro_info_r').find('span').eq(2).text().substr(4)
+    replyFlex2.body.contents[0].contents[3].contents[1].text = $('.movie_intro_info_r span').text().includes('集數') === true ? $('.movie_intro_info_r span').eq(2).text().substr(4) : '-'
     // 分數
-    replyFlex2.body.contents[0].contents[4].contents[1].text = $('.movie_intro_info_r').text().includes('IMDb') === true ? $('.movie_intro_info_r').find('span').eq(3).text().substr(7).trim() : '-'
+    replyFlex2.body.contents[0].contents[4].contents[1].text = $('.movie_intro_info_r').text().includes('IMDb') === true ? $('.movie_intro_info_r span').eq(3).text().substr(7).trim() : '-'
     // 導演
     replyFlex2.body.contents[0].contents[5].contents[1].text = $('.movie_intro_list').eq(0).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
     if ($('.movie_intro_list').length === 2) {
@@ -70,21 +71,13 @@ export default async (event) => {
       replyFlex2.body.contents[0].contents[6].contents[1].text = '-'
       replyFlex2.body.contents[0].contents[7].contents[1].text = $('.movie_intro_list').eq(1).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
     } else {
-      replyFlex2.body.contents[0].contents[6].contents[1].text = $('.movie_intro_list').eq(1).text().replace(/[a-zA-Z ()\n-]/g, '').replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
+      replyFlex2.body.contents[0].contents[6].contents[1].text = $('.movie_intro_list').eq(1).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
       replyFlex2.body.contents[0].contents[7].contents[1].text = $('.movie_intro_list').eq(2).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
     }
     // OTT
     replyFlex2.body.contents[0].contents[8].contents[1].text = $('.evaluate_txt_finish').text().trim() === '' ? '-' : $('.evaluate_txt_finish').text().trim()
-    // 影劇分類
-    // let type = ''
-    // for (let i = 0; i < $('.level_name_box').find('.level_name').length; i++) {
-    //   type = $('.level_name_box').find('.level_name').eq(i).text().trim()
-    //   type += type + ' '
-    //   replyFlex2.body.contents[0].contents[9].contents[0].action.text = type
-    // }
     // 劇情簡介
-    replyFlex2.body.contents[0].contents[9].contents[1].action.text = $('#story').text().trim().slice(0, 297) + '...'
-
+    replyFlex2.body.contents[0].contents[9].action.text = $('#story').text().trim().length > 297 ? $('#story').text().trim().slice(0, 297) + '..' : $('#story').text().trim()
     dramaMain.push(replyFlex2)
 
     const reply2 = {
@@ -97,6 +90,7 @@ export default async (event) => {
     }
     event.reply(reply2)
     writejson(reply2, 'dramaMain')
+    if (Num === '') event.reply('無法查詢或輸入錯誤，請重新輸入')
   } catch (error) {
     console.error(error)
   }

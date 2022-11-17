@@ -89,8 +89,8 @@ export default {
         imageUrl: 'https://cdn-icons-png.flaticon.com/512/197/197560.png',
         action: {
           type: 'message',
-          label: '法國 最新',
-          text: '法國'
+          label: '法國',
+          text: '法國 最新'
         }
       }
     ]
