@@ -1,7 +1,7 @@
 import axios from 'axios'
 import * as cheerio from 'cheerio'
 import writejson from '../utils/writejson.js'
-import flex2 from '../flexs/flex2.js'
+import flexInfo from '../flexs/flexInfo.js'
 
 export default async (event) => {
   const dramaNums = []
@@ -20,7 +20,7 @@ export default async (event) => {
       const $ = cheerio.load(data)
       const $$ = cheerio.load(data2)
       if ($('.box_inner').find('ul').text() !== '') {
-        dramaNums.push({ name: '', num: '' })
+        // dramaNums.push({ name: '', num: '' })
         $('.category-list li').each(function () {
           dramaNums.push({ name: '', num: '' })
           dramaNums[dramaNumsEnd].name = $(this).find('.movielist_info h2').text().trim()
@@ -54,23 +54,27 @@ export default async (event) => {
     const { data } = await axios.get('https://movies.yahoo.com.tw/movieinfo_main/' + Num)
     const $ = cheerio.load(data)
     const dramaMain = []
-    const replyFlex2 = JSON.parse(JSON.stringify(flex2))
+    const replyFlex2 = JSON.parse(JSON.stringify(flexInfo))
     replyFlex2.body.contents[0].contents[0].url = $('.movie_intro_foto img').attr('src')
     // 劇名
-    replyFlex2.body.contents[0].contents[1].contents[1].text = $('.movie_intro_info h1').text().replace(/[\n ]/g, '').slice(0, -6)
+    replyFlex2.body.contents[0].contents[1].contents[1].text = $('.movie_intro_info h1').text().slice(0, $('.movie_intro_info h1').text().indexOf('\n'))
     // 日期
-    replyFlex2.body.contents[0].contents[2].contents[1].text = $('.movie_intro_info_r span').text().includes('播出日期') === true ? $('.movie_intro_info_r span').eq(1).text().substr(5) : '-'
+    replyFlex2.body.contents[0].contents[2].contents[1].text = $('.movie_intro_info_r').text().includes('播出日期') === true ? $('.movie_intro_info_r span').eq(1).text().substr(5) : '-'
     // 集數
-    replyFlex2.body.contents[0].contents[3].contents[1].text = $('.movie_intro_info_r span').text().includes('集數') === true ? $('.movie_intro_info_r span').eq(2).text().substr(4) : '-'
+    replyFlex2.body.contents[0].contents[3].contents[1].text = $('.movie_intro_info_r').text().includes('集數') === true ? $('.movie_intro_info_r span').eq(2).text().substr(4) : '-'
     // 分數
     replyFlex2.body.contents[0].contents[4].contents[1].text = $('.movie_intro_info_r').text().includes('IMDb') === true ? $('.movie_intro_info_r span').eq(3).text().substr(7).trim() : '-'
-    // 導演
-    replyFlex2.body.contents[0].contents[5].contents[1].text = $('.movie_intro_list').eq(0).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
-    if ($('.movie_intro_list').length === 2) {
-      // 編劇 主演
+    // 導演 編劇 主演
+    if ($('.movie_intro_list').length === 1) {
+      replyFlex2.body.contents[0].contents[5].contents[1].text = '-'
+      replyFlex2.body.contents[0].contents[6].contents[1].text = '-'
+      replyFlex2.body.contents[0].contents[7].contents[1].text = $('.movie_intro_list').eq(0).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
+    } else if ($('.movie_intro_list').length === 2) {
+      replyFlex2.body.contents[0].contents[5].contents[1].text = $('.movie_intro_list').eq(0).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
       replyFlex2.body.contents[0].contents[6].contents[1].text = '-'
       replyFlex2.body.contents[0].contents[7].contents[1].text = $('.movie_intro_list').eq(1).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
     } else {
+      replyFlex2.body.contents[0].contents[5].contents[1].text = $('.movie_intro_list').eq(0).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
       replyFlex2.body.contents[0].contents[6].contents[1].text = $('.movie_intro_list').eq(1).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
       replyFlex2.body.contents[0].contents[7].contents[1].text = $('.movie_intro_list').eq(2).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
     }
@@ -89,7 +93,7 @@ export default async (event) => {
       }
     }
     event.reply(reply2)
-    writejson(reply2, 'dramaMain')
+    writejson(reply2, 'dramaInfo')
     if (Num === '') event.reply('無法查詢或輸入錯誤，請重新輸入')
   } catch (error) {
     console.error(error)

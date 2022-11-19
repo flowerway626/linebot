@@ -12,7 +12,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/October2022/IxHB9kIJcxx4x3hBCHou-800x1127.jpg",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/June2022/xLBiWbeq3OqdTdaCs4ET-800x1142.jpg",
               "size": "full",
               "aspectMode": "cover",
               "aspectRatio": "8:10",
@@ -20,7 +20,7 @@
               "action": {
                 "type": "message",
                 "label": "action",
-                "text": "她和她的她"
+                "text": "制裁者"
               }
             },
             {
@@ -33,7 +33,7 @@
                   "contents": [
                     {
                       "type": "text",
-                      "text": "台灣 最新",
+                      "text": "美國人氣",
                       "color": "#E4F2ED",
                       "size": "md",
                       "flex": 0,
@@ -86,7 +86,7 @@
                       "contents": [
                         {
                           "type": "text",
-                          "text": "她和她的她",
+                          "text": "制裁者",
                           "size": "xl",
                           "color": "#ffffff",
                           "weight": "bold"
@@ -166,7 +166,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/October2022/NswZrulzTrWWAOIvaioQ-800x1143.jpg",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/June2022/fGwYwUtUsbhAovQbaNys-800x1142.jpg",
               "size": "full",
               "aspectMode": "cover",
               "aspectRatio": "8:10",
@@ -174,7 +174,7 @@
               "action": {
                 "type": "message",
                 "label": "action",
-                "text": "我的牙想你"
+                "text": "制裁者"
               }
             },
             {
@@ -187,7 +187,7 @@
                   "contents": [
                     {
                       "type": "text",
-                      "text": "台灣 最新",
+                      "text": "美國人氣",
                       "color": "#E4F2ED",
                       "size": "md",
                       "flex": 0,
@@ -240,7 +240,7 @@
                       "contents": [
                         {
                           "type": "text",
-                          "text": "我的牙想你",
+                          "text": "制裁者",
                           "size": "xl",
                           "color": "#ffffff",
                           "weight": "bold"
@@ -257,7 +257,7 @@
                           "contents": [
                             {
                               "type": "text",
-                              "text": "第一季",
+                              "text": "第二季",
                               "color": "#a9a9a9",
                               "size": "sm",
                               "flex": 0,
@@ -320,7 +320,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/r1SqDW3ugpm1MSusRRA2-800x1200.jpg",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/June2022/lQtsGkijzd3ZsQcbDbTa-800x1142.jpg",
               "size": "full",
               "aspectMode": "cover",
               "aspectRatio": "8:10",
@@ -328,7 +328,7 @@
               "action": {
                 "type": "message",
                 "label": "action",
-                "text": "仙女姐姐來我家"
+                "text": "黑鳥"
               }
             },
             {
@@ -341,7 +341,7 @@
                   "contents": [
                     {
                       "type": "text",
-                      "text": "台灣 最新",
+                      "text": "美國人氣",
                       "color": "#E4F2ED",
                       "size": "md",
                       "flex": 0,
@@ -394,7 +394,7 @@
                       "contents": [
                         {
                           "type": "text",
-                          "text": "仙女姐姐來我家",
+                          "text": "黑鳥",
                           "size": "xl",
                           "color": "#ffffff",
                           "weight": "bold"
@@ -474,7 +474,7 @@
           "contents": [
             {
               "type": "image",
-              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/pzcyqDp1lcVQB5dyI7MX-800x1200.jpg",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/October2022/lqReYyK5pyyYTUcfkcxV-800x1142.jpg",
               "size": "full",
               "aspectMode": "cover",
               "aspectRatio": "8:10",
@@ -482,7 +482,7 @@
               "action": {
                 "type": "message",
                 "label": "action",
-                "text": "台北女子圖鑑"
+                "text": "天才神秘會社"
               }
             },
             {
@@ -495,7 +495,7 @@
                   "contents": [
                     {
                       "type": "text",
-                      "text": "台灣 最新",
+                      "text": "美國人氣",
                       "color": "#E4F2ED",
                       "size": "md",
                       "flex": 0,
@@ -548,7 +548,161 @@
                       "contents": [
                         {
                           "type": "text",
-                          "text": "台北女子圖鑑",
+                          "text": "天才神秘會社",
+                          "size": "xl",
+                          "color": "#ffffff",
+                          "weight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "box",
+                          "layout": "baseline",
+                          "contents": [
+                            {
+                              "type": "text",
+                              "text": "第二季",
+                              "color": "#a9a9a9",
+                              "size": "sm",
+                              "flex": 0,
+                              "align": "end"
+                            }
+                          ],
+                          "flex": 0,
+                          "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.4",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
+                        }
+                      ]
+                    }
+                  ],
+                  "spacing": "xs"
+                }
+              ],
+              "position": "absolute",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "paddingAll": "20px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/October2022/QrNbpg8iCRHgYDaVdrUw-800x1142.jpg",
+              "size": "full",
+              "aspectMode": "cover",
+              "aspectRatio": "8:10",
+              "gravity": "center",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "吉勒摩·戴托羅之珍奇櫃"
+              }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "美國人氣",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [],
+              "position": "absolute",
+              "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "endColor": "#00000000",
+                "startColor": "#00000099"
+              },
+              "width": "100%",
+              "height": "40%",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px"
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "吉勒摩·戴托羅之珍奇櫃",
                           "size": "xl",
                           "color": "#ffffff",
                           "weight": "bold"
@@ -585,7 +739,1085 @@
                               "contents": [
                                 {
                                   "type": "text",
-                                  "text": "NO.4",
+                                  "text": "NO.5",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
+                        }
+                      ]
+                    }
+                  ],
+                  "spacing": "xs"
+                }
+              ],
+              "position": "absolute",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "paddingAll": "20px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/June2022/X9Duh9H6tWuPgd2CtrOu-800x1142.jpg",
+              "size": "full",
+              "aspectMode": "cover",
+              "aspectRatio": "8:10",
+              "gravity": "center",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "龍族前傳"
+              }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "美國人氣",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [],
+              "position": "absolute",
+              "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "endColor": "#00000000",
+                "startColor": "#00000099"
+              },
+              "width": "100%",
+              "height": "40%",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px"
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "龍族前傳",
+                          "size": "xl",
+                          "color": "#ffffff",
+                          "weight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "box",
+                          "layout": "baseline",
+                          "contents": [
+                            {
+                              "type": "text",
+                              "text": "第一季",
+                              "color": "#a9a9a9",
+                              "size": "sm",
+                              "flex": 0,
+                              "align": "end"
+                            }
+                          ],
+                          "flex": 0,
+                          "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.6",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
+                        }
+                      ]
+                    }
+                  ],
+                  "spacing": "xs"
+                }
+              ],
+              "position": "absolute",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "paddingAll": "20px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/August2022/B86o56IRajV59XhEsoyW-800x1142.jpg",
+              "size": "full",
+              "aspectMode": "cover",
+              "aspectRatio": "8:10",
+              "gravity": "center",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "瑞克和莫蒂"
+              }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "美國人氣",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [],
+              "position": "absolute",
+              "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "endColor": "#00000000",
+                "startColor": "#00000099"
+              },
+              "width": "100%",
+              "height": "40%",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px"
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "瑞克和莫蒂",
+                          "size": "xl",
+                          "color": "#ffffff",
+                          "weight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "box",
+                          "layout": "baseline",
+                          "contents": [
+                            {
+                              "type": "text",
+                              "text": "第六季",
+                              "color": "#a9a9a9",
+                              "size": "sm",
+                              "flex": 0,
+                              "align": "end"
+                            }
+                          ],
+                          "flex": 0,
+                          "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.7",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
+                        }
+                      ]
+                    }
+                  ],
+                  "spacing": "xs"
+                }
+              ],
+              "position": "absolute",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "paddingAll": "20px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/April2022/6TNh3it10SqDYoauW8U4-1000x1428.jpg",
+              "size": "full",
+              "aspectMode": "cover",
+              "aspectRatio": "8:10",
+              "gravity": "center",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "史前地球"
+              }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "美國人氣",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [],
+              "position": "absolute",
+              "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "endColor": "#00000000",
+                "startColor": "#00000099"
+              },
+              "width": "100%",
+              "height": "40%",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px"
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "史前地球",
+                          "size": "xl",
+                          "color": "#ffffff",
+                          "weight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "box",
+                          "layout": "baseline",
+                          "contents": [
+                            {
+                              "type": "text",
+                              "text": "第一季",
+                              "color": "#a9a9a9",
+                              "size": "sm",
+                              "flex": 0,
+                              "align": "end"
+                            }
+                          ],
+                          "flex": 0,
+                          "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.8",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
+                        }
+                      ]
+                    }
+                  ],
+                  "spacing": "xs"
+                }
+              ],
+              "position": "absolute",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "paddingAll": "20px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/June2022/Ej4Qfh5V8h70Q1IH4Oaq-800x1142.jpg",
+              "size": "full",
+              "aspectMode": "cover",
+              "aspectRatio": "8:10",
+              "gravity": "center",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "打造極致閨房"
+              }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "美國人氣",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [],
+              "position": "absolute",
+              "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "endColor": "#00000000",
+                "startColor": "#00000099"
+              },
+              "width": "100%",
+              "height": "40%",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px"
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "打造極致閨房",
+                          "size": "xl",
+                          "color": "#ffffff",
+                          "weight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "box",
+                          "layout": "baseline",
+                          "contents": [
+                            {
+                              "type": "text",
+                              "text": "第一季",
+                              "color": "#a9a9a9",
+                              "size": "sm",
+                              "flex": 0,
+                              "align": "end"
+                            }
+                          ],
+                          "flex": 0,
+                          "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.9",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
+                        }
+                      ]
+                    }
+                  ],
+                  "spacing": "xs"
+                }
+              ],
+              "position": "absolute",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "paddingAll": "20px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/June2022/zliXf4eIstxsPDipzIzQ-800x1142.jpg",
+              "size": "full",
+              "aspectMode": "cover",
+              "aspectRatio": "8:10",
+              "gravity": "center",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "兜風KTV"
+              }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "美國人氣",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [],
+              "position": "absolute",
+              "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "endColor": "#00000000",
+                "startColor": "#00000099"
+              },
+              "width": "100%",
+              "height": "40%",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px"
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "兜風KTV",
+                          "size": "xl",
+                          "color": "#ffffff",
+                          "weight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "box",
+                          "layout": "baseline",
+                          "contents": [
+                            {
+                              "type": "text",
+                              "text": "第五季",
+                              "color": "#a9a9a9",
+                              "size": "sm",
+                              "flex": 0,
+                              "align": "end"
+                            }
+                          ],
+                          "flex": 0,
+                          "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.10",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
+                        }
+                      ]
+                    }
+                  ],
+                  "spacing": "xs"
+                }
+              ],
+              "position": "absolute",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "paddingAll": "20px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/September2022/0FhlhDrz5HX5Lq5DB2YZ-800x1142.jpg",
+              "size": "full",
+              "aspectMode": "cover",
+              "aspectRatio": "8:10",
+              "gravity": "center",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "大熊餐廳"
+              }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "美國人氣",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [],
+              "position": "absolute",
+              "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "endColor": "#00000000",
+                "startColor": "#00000099"
+              },
+              "width": "100%",
+              "height": "40%",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px"
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "大熊餐廳",
+                          "size": "xl",
+                          "color": "#ffffff",
+                          "weight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "box",
+                          "layout": "baseline",
+                          "contents": [
+                            {
+                              "type": "text",
+                              "text": "第一季",
+                              "color": "#a9a9a9",
+                              "size": "sm",
+                              "flex": 0,
+                              "align": "end"
+                            }
+                          ],
+                          "flex": 0,
+                          "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.11",
+                                  "color": "#E4F2ED",
+                                  "size": "sm",
+                                  "flex": 0,
+                                  "align": "end"
+                                }
+                              ],
+                              "flex": 0,
+                              "spacing": "lg",
+                              "backgroundColor": "#45617399",
+                              "paddingAll": "2px",
+                              "cornerRadius": "20px",
+                              "paddingStart": "8px",
+                              "paddingEnd": "8px"
+                            }
+                          ],
+                          "position": "absolute",
+                          "offsetEnd": "0px"
+                        }
+                      ]
+                    }
+                  ],
+                  "spacing": "xs"
+                }
+              ],
+              "position": "absolute",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px",
+              "paddingAll": "20px"
+            }
+          ],
+          "paddingAll": "0px"
+        }
+      },
+      {
+        "type": "bubble",
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://movies.yahoo.com.tw/i/r/w420/production/movies/June2022/xatcOpYb6ipXy9TCyaoe-800x1142.jpg",
+              "size": "full",
+              "aspectMode": "cover",
+              "aspectRatio": "8:10",
+              "gravity": "center",
+              "action": {
+                "type": "message",
+                "label": "action",
+                "text": "西方極樂園"
+              }
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "美國人氣",
+                      "color": "#E4F2ED",
+                      "size": "md",
+                      "flex": 0,
+                      "align": "end",
+                      "weight": "bold"
+                    }
+                  ],
+                  "flex": 0,
+                  "spacing": "lg",
+                  "backgroundColor": "#BAD99C99",
+                  "alignItems": "flex-end",
+                  "paddingAll": "3px",
+                  "cornerRadius": "20px",
+                  "paddingStart": "8px",
+                  "paddingEnd": "8px"
+                }
+              ],
+              "position": "absolute",
+              "offsetTop": "18px",
+              "offsetEnd": "18px"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [],
+              "position": "absolute",
+              "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "endColor": "#00000000",
+                "startColor": "#00000099"
+              },
+              "width": "100%",
+              "height": "40%",
+              "offsetBottom": "0px",
+              "offsetStart": "0px",
+              "offsetEnd": "0px"
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "text",
+                          "text": "西方極樂園",
+                          "size": "xl",
+                          "color": "#ffffff",
+                          "weight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "box",
+                      "layout": "horizontal",
+                      "contents": [
+                        {
+                          "type": "box",
+                          "layout": "baseline",
+                          "contents": [
+                            {
+                              "type": "text",
+                              "text": "第四季",
+                              "color": "#a9a9a9",
+                              "size": "sm",
+                              "flex": 0,
+                              "align": "end"
+                            }
+                          ],
+                          "flex": 0,
+                          "spacing": "lg"
+                        },
+                        {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "box",
+                              "layout": "baseline",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "NO.12",
                                   "color": "#E4F2ED",
                                   "size": "sm",
                                   "flex": 0,
