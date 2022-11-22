@@ -2,6 +2,7 @@ import 'dotenv/config'
 import linebot from 'linebot'
 import dramaRank from './commeands/dramaRank.js'
 import dramaInfo from './commeands/dramaInfo.js'
+import dramaOtt from './commeands/dramaOtt.js'
 import flexPopular from './flexs/flexPopular.js'
 import flexNew from './flexs/flexNew.js'
 
@@ -22,13 +23,14 @@ bot.on('message', event => {
       if (event.message.text.includes(countrys[i])) dramaRank(event)
       else if (event.message.text === '人氣排行') event.reply(flexPopular)
       else if (event.message.text === '最新排行') event.reply(flexNew)
-      // else if (event.message.text === '使用說明') event.reply(flexNew)
+      else if (event.message.text === '使用說明') event.reply(flexNew)
+      else if (event.message.text.includes('ott')) dramaOtt(event)
 
       // 當輸入內容不超過 50 字時 (排除發送劇情介紹觸發事件)
       else if (event.message.text.length < 50 &&
         event.message.text.includes(countrys[i]) === false) dramaInfo(event)
     }
-  } else return
+  }
 })
 
 bot.listen('/', process.env.PORT || 3000, () => {
