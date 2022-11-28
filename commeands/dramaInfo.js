@@ -15,8 +15,16 @@ export default async (event) => {
     for (let i = 0; i < countrys.length; i++) {
       url1 = `https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1`
       url2 = `https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1&sort=popular`
-      const { data } = await axios.get(url1)
-      const { data: data2 } = await axios.get(url2)
+      const { data } = await axios.get(url1, {
+        headers: {
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+        }
+      })
+      const { data: data2 } = await axios.get(url2, {
+        headers: {
+          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+        }
+      })
       const $ = cheerio.load(data)
       const $$ = cheerio.load(data2)
       if ($('.box_inner').find('ul').text() !== '') {
