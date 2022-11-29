@@ -9,7 +9,6 @@ export default async (event) => {
     let sort = ''
     event.message.text.includes('人氣') ? sort = '&sort=popular' : sort = ''
     const url = encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${country}&type_id=1${sort}`)
-    // encodeURI
     const { data } = await axios.get(url)
     const $ = cheerio.load(data)
     console.log(url)
@@ -37,9 +36,8 @@ export default async (event) => {
     await event.reply(reply)
     writejson(reply, 'dramaRank')
     await event.reply('查無資料，請更換檢索條件')
-    // return dramaNums
   } catch (error) {
-    await event.reply('發生錯誤，請稍後再試')
+    event.reply('發生錯誤，請稍後再試')
     console.error(error)
   }
 }
