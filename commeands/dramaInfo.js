@@ -14,29 +14,26 @@ export default async (event) => {
     for (let i = 0; i < countrys.length; i++) {
       url1 = `https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1`
       url2 = `https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1&sort=popular`
-      const { data } = await axios.get(url1, {
-        headers: {
-          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
-        }
-      })
-      const { data: data2 } = await axios.get(url2, {
-        headers: {
-          'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
-        }
-      })
+      //   , {
+      //   headers: {
+      //     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+      //   }
+      // }
+      const { data } = await axios.get(url1)
+      const { data: data2 } = await axios.get(url2)
       const $ = cheerio.load(data)
       const $$ = cheerio.load(data2)
-      $('.category-list li').each(function () {
+      $('.category-list li').each(function (i) {
         dramaNums.push({ name: '', num: '' })
-        dramaNums[dramaNumsEnd].name = $(this).find('.movielist_info h2').text().trim()
-        dramaNums[dramaNumsEnd].num = $(this).find('a').attr('href').substr(-5)
+        dramaNums[dramaNumsEnd].name = $(this).eq(i).find('.movielist_info h2').text().trim()
+        dramaNums[dramaNumsEnd].num = $(this).eq(i).find('a').attr('href').substr(-5)
         dramaNumsEnd += 1
       })
       dramaNums.push({ name: '', num: '' })
       $$('.category-list li').each(function () {
         dramaNums.push({ name: '', num: '' })
-        dramaNums[dramaNumsEnd].name = $$(this).find('.movielist_info h2').text().trim()
-        dramaNums[dramaNumsEnd].num = $$(this).find('a').attr('href').substr(-5)
+        dramaNums[dramaNumsEnd].name = $$(this).eq(i).find('.movielist_info h2').text().trim()
+        dramaNums[dramaNumsEnd].num = $$(this).eq(i).find('a').attr('href').substr(-5)
         dramaNumsEnd += 1
       })
     }

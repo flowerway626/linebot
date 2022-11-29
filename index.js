@@ -31,10 +31,13 @@ bot.on('message', event => {
       // 當輸入訊息有國家名
       if (event.message.text.includes(countrys[i])) {
         dramaRank(event)
+        console.log('rank')
+        break
         // 當輸入內容不超過 50 字時 (排除發送劇情介紹觸發事件)
-      } else if (event.message.text.length < 50 &&
-        !event.message.text.includes(countrys[i])) {
+      } else if (event.message.text.length < 50) {
         dramaInfo(event)
+        console.log('info')
+        break
       }
     }
   }
