@@ -33,12 +33,12 @@ bot.on('message', event => {
         dramaRank(event)
         console.log('rank')
         break
-        // 當輸入內容不超過 50 字時 (排除發送劇情介紹觸發事件)
-      } else if (event.message.text.length < 50) {
-        dramaInfo(event)
-        console.log('info')
-        break
       }
+    }
+    // 當輸入內容不超過 50 字時 (排除發送劇情介紹觸發事件)
+    if (event.message.text.length < 50) {
+      dramaInfo(event)
+      console.log('info')
     }
   }
 })
