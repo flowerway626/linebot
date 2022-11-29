@@ -26,21 +26,19 @@ export default async (event) => {
       })
       const $ = cheerio.load(data)
       const $$ = cheerio.load(data2)
-      if ($('.box_inner').find('ul').text() !== '') {
-        $('.category-list li').each(function () {
-          dramaNums.push({ name: '', num: '' })
-          dramaNums[dramaNumsEnd].name = $(this).find('.movielist_info h2').text().trim()
-          dramaNums[dramaNumsEnd].num = $(this).find('a').attr('href').substr(-5)
-          dramaNumsEnd += 1
-        })
+      $('.category-list li').each(function () {
         dramaNums.push({ name: '', num: '' })
-        $$('.category-list li').each(function () {
-          dramaNums.push({ name: '', num: '' })
-          dramaNums[dramaNumsEnd].name = $$(this).find('.movielist_info h2').text().trim()
-          dramaNums[dramaNumsEnd].num = $$(this).find('a').attr('href').substr(-5)
-          dramaNumsEnd += 1
-        })
-      }
+        dramaNums[dramaNumsEnd].name = $(this).find('.movielist_info h2').text().trim()
+        dramaNums[dramaNumsEnd].num = $(this).find('a').attr('href').substr(-5)
+        dramaNumsEnd += 1
+      })
+      dramaNums.push({ name: '', num: '' })
+      $$('.category-list li').each(function () {
+        dramaNums.push({ name: '', num: '' })
+        dramaNums[dramaNumsEnd].name = $$(this).find('.movielist_info h2').text().trim()
+        dramaNums[dramaNumsEnd].num = $$(this).find('a').attr('href').substr(-5)
+        dramaNumsEnd += 1
+      })
     }
   } catch (error) {
     event.reply('編號查詢error')
