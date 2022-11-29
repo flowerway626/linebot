@@ -4,7 +4,6 @@ import writejson from '../utils/writejson.js'
 import flexRank from '../flexs/flexRank.js'
 
 export default async (event) => {
-  // includes()
   try {
     const country = event.message.text.substr(0, 2)
     let sort = ''

@@ -6,7 +6,6 @@ import flexInfo from '../flexs/flexInfo.js'
 export default async (event) => {
   const dramaNums = []
   try {
-    // event.reply('查詢中請稍後')
     // 抓影劇網址編號
     const countrys = ['台灣', '韓國', '中國', '美國', '日本', '英國', '泰國', '香港', '西班牙', '法國']
     let url1 = ''
@@ -43,7 +42,6 @@ export default async (event) => {
           dramaNumsEnd += 1
         })
       }
-      // else event.reply('查無資料，請更換檢索條件')
     }
   } catch (error) {
     await event.reply('編號查詢error')

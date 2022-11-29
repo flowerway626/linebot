@@ -6,7 +6,6 @@ export default async (event) => {
   try {
     console.log(encodeURI(`https://url-detect.robin019.xyz/search?query=${event.message.text.substr(4)}`))
     const { data } = await axios.get(encodeURI(`https://url-detect.robin019.xyz/search?query=${event.message.text.substr(4)}`))
-    // console.log(data[0].result[0].href)
     const otts = []
     for (let i = 0; i < data.length; i++) {
       const replyOtt = JSON.parse(JSON.stringify(flexOtt))
@@ -27,6 +26,6 @@ export default async (event) => {
     writejson(reply3, 'dramaOtt')
   } catch (error) {
     console.log('ott error')
-    // console.error(error)
+    console.error(error)
   }
 }

@@ -44,6 +44,6 @@ bot.on('message', event => {
 //   res.status(200).send('ok')
 // })
 
-bot.listen(process.env.PORT || 3000, () => {
+bot.listen('/', process.env.PORT || 3000, () => {
   console.log('動茲動呀動茲動')
 })
