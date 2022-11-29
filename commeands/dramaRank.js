@@ -11,11 +11,7 @@ export default async (event) => {
     event.message.text.includes('人氣') ? sort = '&sort=popular' : sort = ''
     const url = encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${country}&type_id=1${sort}`)
     // encodeURI
-    const { data } = await axios.get(url, {
-      headers: {
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
-      }
-    })
+    const { data } = await axios.get(url)
     console.log(url)
     const $ = cheerio.load(data)
     const dramas = []
