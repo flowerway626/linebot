@@ -7,7 +7,7 @@ export default async (event) => {
   const dramaNums = []
   try {
     // 抓影劇網址編號
-    const countrys = ['台灣', '韓國', '中國', '美國', '日本', '英國', '泰國', '香港', '西班牙', '法國']
+    const countrys = ['台灣', '韓國', '中國', '美國', '日本', '英國']
     let url1 = ''
     let url2 = ''
     let dramaNumsEnd = 0
@@ -27,7 +27,6 @@ export default async (event) => {
       const $ = cheerio.load(data)
       const $$ = cheerio.load(data2)
       if ($('.box_inner').find('ul').text() !== '') {
-        // dramaNums.push({ name: '', num: '' })
         $('.category-list li').each(function () {
           dramaNums.push({ name: '', num: '' })
           dramaNums[dramaNumsEnd].name = $(this).find('.movielist_info h2').text().trim()
@@ -44,19 +43,22 @@ export default async (event) => {
       }
     }
   } catch (error) {
-    await event.reply('編號查詢error')
-    console.error(error)
+    event.reply('編號查詢error')
+    // console.error(error)
   }
   console.log(dramaNums)
 
   // 該部影劇詳細資訊
+  let Num = ''
   try {
-    let Num = ''
     for (let i = 0; i < dramaNums.length; i++) {
       if (event.message.text === dramaNums[i].name) Num = dramaNums[i].num
     }
-    console.log(Num)
     console.log('https://movies.yahoo.com.tw/movieinfo_main/' + Num)
+    if (Num === '') {
+      event.reply('SORRY！輸入錯誤 or 無法查詢，請輸入其他關鍵字')
+      return
+    }
     const { data } = await axios.get('https://movies.yahoo.com.tw/movieinfo_main/' + Num)
     const $ = cheerio.load(data)
     const dramaMain = []
@@ -100,8 +102,8 @@ export default async (event) => {
     }
     await event.reply(reply2)
     writejson(reply2, 'dramaInfo')
-    if (Num === '') await event.reply('無法查詢或輸入錯誤，請重新輸入')
   } catch (error) {
     console.error(error)
+    console.log('error')
   }
 }

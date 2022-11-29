@@ -18,7 +18,7 @@ const bot = linebot({
 })
 
 // message = TextSendMessage(text = '要傳送的文字訊息')
-const countrys = ['台灣', '韓國', '中國', '美國', '日本', '英國', '泰國', '香港', '西班牙', '法國']
+const countrys = ['台灣', '韓國', '中國', '美國', '日本', '英國']
 bot.on('message', event => {
   if (event.message.type === 'text') {
     for (let i = 0; i < countrys.length; i++) {
@@ -31,7 +31,7 @@ bot.on('message', event => {
 
       // 當輸入內容不超過 50 字時 (排除發送劇情介紹觸發事件)
       else if (event.message.text.length < 50 &&
-        event.message.text.includes(countrys[i]) === false) dramaInfo(event)
+        !event.message.text.includes(countrys[i])) dramaInfo(event)
     }
   }
 })

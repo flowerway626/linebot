@@ -11,8 +11,8 @@ export default async (event) => {
     const url = encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${country}&type_id=1${sort}`)
     // encodeURI
     const { data } = await axios.get(url)
-    console.log(url)
     const $ = cheerio.load(data)
+    console.log(url)
     const dramas = []
     if ($('.box_inner').find('ul').text() !== '') {
       $('.category-list li').each(function (i) {
@@ -39,7 +39,7 @@ export default async (event) => {
     } else await event.reply('查無資料，請更換檢索條件')
     // return dramaNums
   } catch (error) {
-    await event.reply('發生錯誤，請稍後再試11')
+    await event.reply('發生錯誤，請稍後再試')
     console.error(error)
   }
 }
