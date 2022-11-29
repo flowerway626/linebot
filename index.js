@@ -20,24 +20,24 @@ const bot = linebot({
 // message = TextSendMessage(text = '要傳送的文字訊息')
 const countrys = ['台灣', '韓國', '中國', '美國', '日本', '英國']
 bot.on('message', event => {
-  if (event.message.type === 'text') {
-    if (event.message.text.includes('ott')) dramaOtt(event)
-    if (event.message.text === '人氣排行') event.reply(flexPopular)
-    if (event.message.text === '最新排行') event.reply(flexNew)
-    if (event.message.text === 'ott查詢') event.reply('請輸入 "ott+空格+影劇名"')
-    if (event.message.text === '使用說明') event.reply(flexNew)
+  if (event.message.type !== 'text') return
+  if (event.message.text.includes('ott')) dramaOtt(event)
+  else if (event.message.text === '人氣排行') event.reply(flexPopular)
+  else if (event.message.text === '最新排行') event.reply(flexNew)
+  else if (event.message.text === 'ott查詢') event.reply('請輸入 "ott+空格+影劇名"')
+  else if (event.message.text === '使用說明') event.reply(flexNew)
+  else {
     for (let i = 0; i < countrys.length; i++) {
       // 當輸入訊息有國家名
       if (event.message.text.includes(countrys[i])) {
         dramaRank(event)
-        return
         // 當輸入內容不超過 50 字時 (排除發送劇情介紹觸發事件)
-      } else if (event.message.text.length < 50) {
+      } else if (event.message.text.length < 50 &&
+        !event.message.text.includes(countrys[i])) {
         dramaInfo(event)
-        return
       }
     }
-  } else return
+  }
 })
 
 const linebotParser = bot.parser()
