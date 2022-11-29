@@ -46,7 +46,7 @@ export default async (event) => {
       // else event.reply('查無資料，請更換檢索條件')
     }
   } catch (error) {
-    event.reply('編號查詢error')
+    await event.reply('編號查詢error')
     console.error(error)
   }
   console.log(dramaNums)
@@ -100,9 +100,9 @@ export default async (event) => {
         contents: dramaMain
       }
     }
-    event.reply(reply2)
+    await event.reply(reply2)
     writejson(reply2, 'dramaInfo')
-    if (Num === '') event.reply('無法查詢或輸入錯誤，請重新輸入')
+    if (Num === '') await event.reply('無法查詢或輸入錯誤，請重新輸入')
   } catch (error) {
     console.error(error)
   }

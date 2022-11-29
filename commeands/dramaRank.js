@@ -39,12 +39,12 @@ export default async (event) => {
         }
       }
 
-      event.reply(reply)
+      await event.reply(reply)
       writejson(reply, 'dramaRank')
-    } else event.reply('查無資料，請更換檢索條件')
+    } else await event.reply('查無資料，請更換檢索條件')
     // return dramaNums
   } catch (error) {
-    event.reply('發生錯誤，請稍後再試11')
+    await event.reply('發生錯誤，請稍後再試11')
     console.error(error)
   }
 }
