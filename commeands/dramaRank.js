@@ -12,7 +12,7 @@ export default async (event) => {
     const { data } = await axios.get(url)
     const $ = cheerio.load(data)
     console.log(url)
-    console.log($)
+    console.log($.html())
     const dramas = []
     $('.category-list li').each(function (i) {
       const replyFlex = JSON.parse(JSON.stringify(flexRank))

@@ -20,16 +20,18 @@ export default async (event) => {
       //   }
       // }
       const { data } = await axios.get(url1)
-      const { data: data2 } = await axios.get(url2)
       const $ = cheerio.load(data)
-      const $$ = cheerio.load(data2)
+      console.log($.html())
       $('.category-list li').each(function (i) {
         dramaNums.push({ name: '', num: '' })
         dramaNums[dramaNumsEnd].name = $(this).eq(i).find('.movielist_info h2').text().trim()
         dramaNums[dramaNumsEnd].num = $(this).eq(i).find('a').attr('href').substr(-5)
         dramaNumsEnd += 1
       })
-      dramaNums.push({ name: '', num: '' })
+      const { data: data2 } = await axios.get(url2)
+      const $$ = cheerio.load(data2)
+      console.log($$.html())
+      // dramaNums.push({ name: '', num: '' })
       $$('.category-list li').each(function () {
         dramaNums.push({ name: '', num: '' })
         dramaNums[dramaNumsEnd].name = $$(this).eq(i).find('.movielist_info h2').text().trim()
