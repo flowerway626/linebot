@@ -34,7 +34,7 @@ bot.on('message', event => {
         console.log('rank')
         break
         // 當輸入內容不超過 50 字時 (排除發送劇情介紹觸發事件)
-      } else if (i === 5 && !event.message.text.includes(countries[i]) && event.message.text.length < 50) {
+      } else if (i === 5 && event.message.text.length < 50) {
         dramaInfo(event)
         console.log('info')
       }
