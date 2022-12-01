@@ -1,9 +1,9 @@
 import 'dotenv/config'
 import linebot from 'linebot'
 import express from 'express'
-import dramaRank from './commeands/dramaRank.js'
-import dramaInfo from './commeands/dramaInfo.js'
-import dramaOtt from './commeands/dramaOtt.js'
+import dramaRank from './commands/dramaRank.js'
+import dramaInfo from './commands/dramaInfo.js'
+import dramaOtt from './commands/dramaOtt.js'
 import flexPopular from './flexs/flexPopular.js'
 import flexNew from './flexs/flexNew.js'
 
