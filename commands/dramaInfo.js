@@ -96,8 +96,8 @@ export default async (event) => {
         contents: dramaMain
       }
     }
-    await event.reply(reply2)
-    writejson(reply2, 'dramaInfo')
+    if (await event.reply(reply2)) writejson(reply2, 'dramaInfo')
+    else event.reply('查無資料，請更換檢索條件')
   } catch (error) {
     console.error(error)
     console.log('error')

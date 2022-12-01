@@ -22,8 +22,8 @@ export default async (event) => {
         contents: otts
       }
     }
-    event.reply(reply3)
-    writejson(reply3, 'dramaOtt')
+    if (event.reply(reply3)) writejson(reply3, 'dramaOtt')
+    else event.reply('SORRY ~ 查無該劇播出平台')
   } catch (error) {
     console.log('ott error')
     console.error(error)
