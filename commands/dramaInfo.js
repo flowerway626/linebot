@@ -12,26 +12,25 @@ export default async (event) => {
     let url2 = ''
     let dramaNumsEnd = 0
     for (let i = 0; i < countrys.length; i++) {
-      url1 = `https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1`
-      url2 = `https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1&sort=popular`
+      url1 = encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1`)
+      url2 = encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1&sort=popular`)
       //   , {
       //   headers: {
       //     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
       //   }
       // }
       const { data } = await axios.get(url1)
+      const { data: data2 } = await axios.get(url2)
       const $ = cheerio.load(data)
+      const $$ = cheerio.load(data2)
       console.log($.html())
+      console.log($$.html())
       $('.category-list li').each(function (i) {
         dramaNums.push({ name: '', num: '' })
         dramaNums[dramaNumsEnd].name = $(this).eq(i).find('.movielist_info h2').text().trim()
         dramaNums[dramaNumsEnd].num = $(this).eq(i).find('a').attr('href').substr(-5)
         dramaNumsEnd += 1
       })
-      const { data: data2 } = await axios.get(url2)
-      const $$ = cheerio.load(data2)
-      console.log($$.html())
-      // dramaNums.push({ name: '', num: '' })
       $$('.category-list li').each(function () {
         dramaNums.push({ name: '', num: '' })
         dramaNums[dramaNumsEnd].name = $$(this).eq(i).find('.movielist_info h2').text().trim()
@@ -41,7 +40,7 @@ export default async (event) => {
     }
   } catch (error) {
     event.reply('編號查詢error')
-    // console.error(error)
+    console.error(error)
   }
   console.log(dramaNums)
 

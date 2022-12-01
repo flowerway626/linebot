@@ -24,7 +24,7 @@ bot.on('message', event => {
   if (event.message.text.includes('ott')) dramaOtt(event)
   else if (event.message.text === '人氣排行') event.reply(flexPopular)
   else if (event.message.text === '最新排行') event.reply(flexNew)
-  else if (event.message.text === 'ott查詢') event.reply('請輸入 "ott+空格+影劇名"')
+  else if (event.message.text === 'OTT查詢') event.reply('請輸入 "ott+空格+影劇名"')
   else if (event.message.text === '使用說明') event.reply(flexNew)
   else {
     for (let i = 0; i < countries.length; i++) {
