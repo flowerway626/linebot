@@ -8,15 +8,12 @@ export default async (event) => {
     const country = event.message.text.substr(0, 2)
     let sort = ''
     event.message.text.includes('人氣') ? sort = '&sort=popular' : sort = ''
-    const url = encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${country}&type_id=1${sort}`)
-    const { data } = await axios.get(url, {
+    const { data } = await axios.get(encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${country}&type_id=1${sort}`), {
       headers: {
         'Accept-Encoding': 'text/html'
       }
     })
     const $ = cheerio.load(data)
-    console.log(url)
-    console.log($.html())
     const dramas = []
     $('.category-list li').each(function (i) {
       const replyFlex = JSON.parse(JSON.stringify(flexRank))

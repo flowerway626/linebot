@@ -8,31 +8,21 @@ export default async (event) => {
   try {
     // 抓影劇網址編號
     const countrys = ['台灣', '韓國', '中國', '美國', '日本', '英國']
-    let url1 = ''
-    let url2 = ''
+    // 影劇編號索引直
     let dramaNumsEnd = 0
     for (let i = 0; i < countrys.length; i++) {
-      url1 = encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1`)
-      url2 = encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1&sort=popular`)
-      //   , {
-      //   headers: {
-      //     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
-      //   }
-      // }
-      const { data } = await axios.get(url1, {
+      const { data } = await axios.get(encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1`), {
         headers: {
           'Accept-Encoding': 'text/html'
         }
       })
-      const { data: data2 } = await axios.get(url2, {
+      const { data: data2 } = await axios.get(encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1&sort=popular`), {
         headers: {
           'Accept-Encoding': 'text/html'
         }
       })
       const $ = cheerio.load(data)
       const $$ = cheerio.load(data2)
-      console.log($.html())
-      console.log($$.html())
       $('.category-list li').each(function (i) {
         dramaNums.push({ name: '', num: '' })
         dramaNums[dramaNumsEnd].name = $(this).find('.movielist_info h2').text().trim()
@@ -75,11 +65,11 @@ export default async (event) => {
     // 劇名
     replyFlex2.body.contents[0].contents[1].contents[1].text = $('.movie_intro_info h1').text().slice(0, $('.movie_intro_info h1').text().indexOf('\n'))
     // 日期
-    replyFlex2.body.contents[0].contents[2].contents[1].text = $('.movie_intro_info_r').text().includes('播出日期') === true ? $('.movie_intro_info_r span').eq(1).text().substr(5) : '-'
+    replyFlex2.body.contents[0].contents[2].contents[1].text = $('.movie_intro_info_r').text().includes('播出日期') ? $('.movie_intro_info_r span').eq(1).text().substr(5) : '-'
     // 集數
-    replyFlex2.body.contents[0].contents[3].contents[1].text = $('.movie_intro_info_r').text().includes('集數') === true ? $('.movie_intro_info_r span').eq(2).text().substr(4) : '-'
+    replyFlex2.body.contents[0].contents[3].contents[1].text = $('.movie_intro_info_r').text().includes('集數') ? $('.movie_intro_info_r span').eq(2).text().substr(4) : '-'
     // 分數
-    replyFlex2.body.contents[0].contents[4].contents[1].text = $('.movie_intro_info_r').text().includes('IMDb') === true ? $('.movie_intro_info_r span').eq(3).text().substr(7).trim() : '-'
+    replyFlex2.body.contents[0].contents[4].contents[1].text = $('.movie_intro_info_r').text().includes('IMDb') ? $('.movie_intro_info_r span').eq(3).text().substr(7).trim() : '-'
     // 導演 編劇 主演
     if ($('.movie_intro_list').length === 1) {
       replyFlex2.body.contents[0].contents[5].contents[1].text = '-'
@@ -94,10 +84,12 @@ export default async (event) => {
       replyFlex2.body.contents[0].contents[6].contents[1].text = $('.movie_intro_list').eq(1).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
       replyFlex2.body.contents[0].contents[7].contents[1].text = $('.movie_intro_list').eq(2).text().replace(/[a-zA-Z ()\n-]/g, '').substr(3).trim()
     }
-    // OTT
+    // 串流平台
     replyFlex2.body.contents[0].contents[8].contents[1].text = $('.evaluate_txt_finish').text().trim() === '' ? '-' : $('.evaluate_txt_finish').text().trim()
+    // ott 查詢
+    replyFlex2.body.contents[0].contents[9].contents[0].action.text = 'ott ' + $('.movie_intro_info h1').text().slice(0, $('.movie_intro_info h1').text().indexOf('\n'))
     // 劇情簡介
-    replyFlex2.body.contents[0].contents[9].action.text = $('#story').text().trim().length > 297 ? $('#story').text().trim().slice(0, 297) + '..' : $('#story').text().trim()
+    replyFlex2.body.contents[0].contents[9].contents[1].action.text = $('#story').text().trim().length > 297 ? $('#story').text().trim().slice(0, 297) + '..' : $('#story').text().trim()
     dramaMain.push(replyFlex2)
 
     const reply2 = {
@@ -108,7 +100,7 @@ export default async (event) => {
         contents: dramaMain
       }
     }
-    if (await event.reply(reply2)) writejson(reply2, 'dramaInfo')
+    if (event.reply(reply2)) writejson(reply2, 'dramaInfo')
     else event.reply('查無資料，請更換檢索條件')
   } catch (error) {
     console.error(error)

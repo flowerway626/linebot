@@ -17,7 +17,6 @@ const bot = linebot({
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN
 })
 
-// message = TextSendMessage(text = '要傳送的文字訊息')
 const countries = ['台灣', '韓國', '中國', '美國', '日本', '英國']
 const direction = `❖ 人氣排行 ⇒ 選擇國家 
 ⇒ TOP12 高人氣影劇
@@ -27,11 +26,17 @@ const direction = `❖ 人氣排行 ⇒ 選擇國家
 
 ❖ OTT查詢 ⇒ 
 影劇播出串流平台整理
-△ 點選排行榜可查看該劇的詳細資訊`
+
+△ 輸入國家名+最新 or 人氣 可查詢對應排行榜
+△ 直接輸入完整劇名也可查詢！
+△ 點選排行榜可查看該劇的詳細資訊
+※ 影劇詳情僅能查詢 yahoo!電視影劇 最新及人氣排行中的前 12 部
+造成不便請見諒~
+`
 
 bot.on('message', event => {
   if (event.message.type !== 'text') return
-  if (event.message.text.includes('ott')) dramaOtt(event)
+  if (event.message.text.includes('ott') || event.message.text.includes('OTT')) dramaOtt(event)
   else if (event.message.text === '人氣排行') event.reply(flexPopular)
   else if (event.message.text === '最新排行') event.reply(flexNew)
   else if (event.message.text === 'OTT查詢') event.reply('請輸入 "ott+空格+影劇名"')

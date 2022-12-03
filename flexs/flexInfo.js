@@ -12,10 +12,9 @@ export default {
         contents: [
           {
             type: 'image',
-            url: 'https://movies.yahoo.com.tw/i/o/production/movies/May2022/hFGZy15DmOCba46d7qRE-400x600.jpg',
+            url: 'https://movies.yahoo.com.tw/i/o/production/movies/November2022/nwaKmVU4FuHHmBWVVWsP-800x1185.jpg',
             aspectMode: 'cover',
-            size: 'full',
-            aspectRatio: '9:12'
+            size: 'full'
           },
           {
             type: 'box',
@@ -26,7 +25,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '金田一少年之事件簿',
+                text: '財閥家的小兒子',
                 size: 'xl',
                 weight: 'bold',
                 color: '#ffffff'
@@ -51,7 +50,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '2022-06-01',
+                text: '2022-11-18',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -73,7 +72,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '5集',
+                text: '16集',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -95,7 +94,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '-',
+                text: '7.9',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -117,7 +116,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '丸谷俊平、木村尚史',
+                text: '鄭大胤',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -139,7 +138,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '大石哲也、川邊優子',
+                text: '金泰姬',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -165,7 +164,7 @@ export default {
                 color: '#ffffff',
                 size: 'sm',
                 flex: 5,
-                text: '道枝駿佑、上白石萌歌、澤村一樹'
+                text: '宋仲基、李聖旻李星民、申鉉彬、金南喜、趙漢哲'
               }
             ]
           },
@@ -183,7 +182,7 @@ export default {
               },
               {
                 type: 'text',
-                text: 'Disney+',
+                text: 'friDay影音',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -193,28 +192,64 @@ export default {
           },
           {
             type: 'box',
-            layout: 'vertical',
+            layout: 'horizontal',
             contents: [
               {
-                type: 'text',
-                text: '劇情簡介',
-                align: 'center',
-                size: 'md',
-                color: '#E4F2ED',
-                offsetTop: '3px'
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'text',
+                    text: 'OTT查詢',
+                    align: 'center',
+                    size: 'md',
+                    color: '#E4F2ED',
+                    offsetTop: '3px'
+                  }
+                ],
+                height: '30px',
+                borderWidth: '1px',
+                borderColor: '#999999',
+                action: {
+                  type: 'message',
+                  label: 'action',
+                  text: 'ott search'
+                },
+                justifyContent: 'center',
+                alignItems: 'center',
+                offsetEnd: '0px',
+                offsetBottom: '0px',
+                width: '48%'
+              },
+              {
+                type: 'box',
+                layout: 'vertical',
+                contents: [
+                  {
+                    type: 'text',
+                    text: '劇情簡介',
+                    align: 'center',
+                    size: 'md',
+                    color: '#E4F2ED',
+                    offsetTop: '3px'
+                  }
+                ],
+                height: '30px',
+                borderWidth: '1px',
+                borderColor: '#999999',
+                action: {
+                  type: 'message',
+                  label: 'action',
+                  text: '《財閥家的小兒子》是韓國JTBC在2022年11月推出的連續劇，改編自山景的同名網路小說，由《她很漂亮》、《W－兩個世界》的導演鄭大胤與《成均館緋聞》、《60天，指定倖存者》的編劇金泰姬合作打造，宋仲基、李聖旻、申鉉彬主演。此劇講述被誣陷私吞資金而被財閥家殺害的尹賢宇，重生後成為殺死自己的財閥家的小兒子，為了侵吞整個財閥家族，一步步成長並報仇的故事。'
+                },
+                offsetEnd: '0px',
+                justifyContent: 'center',
+                width: '48%',
+                offsetBottom: '0px',
+                alignItems: 'center'
               }
             ],
-            height: '30px',
-            borderWidth: '1px',
-            borderColor: '#999999',
-            action: {
-              type: 'message',
-              label: 'action',
-              text: '金田一一是傳奇私人偵探金田一耕助的外孫，背負著眾人期待，面對市區不斷發生看似離奇的殺人案，擁有超高智商的金田一一屢屢成功破案。雖然金田一一只是一名高中生，卻能憑藉優秀的邏輯推理能力，解決其他偵探無法偵破的案件。原本只有青梅竹馬好友七瀨美雪從旁協助，但後來金田一一的能力引起東京警視廳警部的注意，此後三人攜手合作破案，將罪犯緝拿歸案。...'
-            },
-            offsetEnd: '0px',
-            justifyContent: 'center',
-            alignItems: 'center'
+            justifyContent: 'space-between'
           }
         ],
         paddingAll: '0px'
