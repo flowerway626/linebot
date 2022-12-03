@@ -35,14 +35,14 @@ export default async (event) => {
       console.log($$.html())
       $('.category-list li').each(function (i) {
         dramaNums.push({ name: '', num: '' })
-        dramaNums[dramaNumsEnd].name = $(this).eq(i).find('.movielist_info h2').text().trim()
-        dramaNums[dramaNumsEnd].num = $(this).eq(i).find('a').attr('href').substr(-5)
+        dramaNums[dramaNumsEnd].name = $(this).find('.movielist_info h2').text().trim()
+        dramaNums[dramaNumsEnd].num = $(this).find('a').attr('href').substr(-5)
         dramaNumsEnd += 1
       })
       $$('.category-list li').each(function () {
         dramaNums.push({ name: '', num: '' })
-        dramaNums[dramaNumsEnd].name = $$(this).eq(i).find('.movielist_info h2').text().trim()
-        dramaNums[dramaNumsEnd].num = $$(this).eq(i).find('a').attr('href').substr(-5)
+        dramaNums[dramaNumsEnd].name = $$(this).find('.movielist_info h2').text().trim()
+        dramaNums[dramaNumsEnd].num = $$(this).find('a').attr('href').substr(-5)
         dramaNumsEnd += 1
       })
     }
