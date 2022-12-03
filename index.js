@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import linebot from 'linebot'
-// import express from 'express'
+import express from 'express'
 import dramaRank from './commands/dramaRank.js'
 import dramaInfo from './commands/dramaInfo.js'
 import dramaOtt from './commands/dramaOtt.js'
@@ -9,7 +9,7 @@ import flexNew from './flexs/flexNew.js'
 
 // process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0
 
-// const app = express()
+const app = express()
 
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
@@ -52,15 +52,14 @@ bot.on('message', event => {
   }
 })
 
-// const linebotParser = bot.parser()
+const linebotParser = bot.parser()
 
-// app.post('/', linebotParser)
+app.post('/', linebotParser)
 
-// app.get('/', (req, res) => {
-//   res.status(200).send('ok')
-// })
+app.get('/', (req, res) => {
+  res.status(200).send('ok')
+})
 
-// app.
-bot.listen('/', process.env.PORT || 3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log('動茲動呀動茲動')
 })
