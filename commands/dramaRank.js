@@ -33,9 +33,8 @@ export default async (event) => {
         contents: dramas
       }
     }
-
-    if (event.reply(reply)) writejson(reply, 'dramaRank')
-    else event.reply('查無資料，請更換檢索條件')
+    event.reply(reply)
+    writejson(reply, 'dramaRank')
   } catch (error) {
     event.reply('發生錯誤，請稍後再試')
     console.error(error)

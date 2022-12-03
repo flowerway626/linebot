@@ -11,7 +11,7 @@ export default async (event) => {
       const replyOtt = JSON.parse(JSON.stringify(flexOtt))
       replyOtt.body.contents[0].text = event.message.text.substr(4) + ' ott 搜尋'
       replyOtt.body.contents[1].text = data[i].ott
-      replyOtt.footer.contents[0].action.uri = data[i].result[0].href
+      replyOtt.footer.contents[0].action.uri = encodeURI(data[i].result[0].href)
       otts.push(replyOtt)
     }
     const reply3 = {
@@ -22,8 +22,11 @@ export default async (event) => {
         contents: otts
       }
     }
-    if (event.reply(reply3)) writejson(reply3, 'dramaOtt')
-    else event.reply('SORRY ~ 查無該劇播出平台')
+    if (otts.length === 0) event.reply('SORRY ~ 查無該劇播出平台')
+    else {
+      event.reply(reply3)
+      writejson(reply3, 'dramaOtt')
+    }
   } catch (error) {
     console.log('ott error')
     console.error(error)

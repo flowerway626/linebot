@@ -23,6 +23,15 @@ export default {
       },
       {
         type: 'action',
+        imageUrl: 'https://cdn-icons-png.flaticon.com/512/197/197604.png',
+        action: {
+          type: 'message',
+          label: '日本',
+          text: '日本 最新'
+        }
+      },
+      {
+        type: 'action',
         imageUrl: 'https://cdn-icons-png.flaticon.com/512/197/197375.png',
         action: {
           type: 'message',
@@ -41,56 +50,11 @@ export default {
       },
       {
         type: 'action',
-        imageUrl: 'https://cdn-icons-png.flaticon.com/512/197/197604.png',
-        action: {
-          type: 'message',
-          label: '日本',
-          text: '日本 最新'
-        }
-      },
-      {
-        type: 'action',
         imageUrl: 'https://cdn-icons-png.flaticon.com/512/197/197374.png',
         action: {
           type: 'message',
           label: '英國',
           text: '英國 最新'
-        }
-      },
-      {
-        type: 'action',
-        imageUrl: 'https://cdn-icons-png.flaticon.com/512/197/197570.png',
-        action: {
-          type: 'message',
-          label: '香港',
-          text: '香港 最新'
-        }
-      },
-      {
-        type: 'action',
-        imageUrl: 'https://cdn-icons-png.flaticon.com/512/197/197452.png',
-        action: {
-          type: 'message',
-          label: '泰國',
-          text: '泰國 最新'
-        }
-      },
-      {
-        type: 'action',
-        imageUrl: 'https://cdn-icons-png.flaticon.com/512/197/197593.png',
-        action: {
-          type: 'message',
-          label: '西班牙',
-          text: '西班牙 最新'
-        }
-      },
-      {
-        type: 'action',
-        imageUrl: 'https://cdn-icons-png.flaticon.com/512/197/197560.png',
-        action: {
-          type: 'message',
-          label: '法國',
-          text: '法國 最新'
         }
       }
     ]

@@ -31,12 +31,11 @@ const direction = `❖ 人氣排行 ⇒ 選擇國家
 △ 直接輸入完整劇名也可查詢！
 △ 點選排行榜可查看該劇的詳細資訊
 ※ 影劇詳情僅能查詢 yahoo!電視影劇 最新及人氣排行中的前 12 部
-造成不便請見諒~
-`
+造成不便請見諒~`
 
 bot.on('message', event => {
   if (event.message.type !== 'text') return
-  if (event.message.text.includes('ott') || event.message.text.includes('OTT')) dramaOtt(event)
+  if (event.message.text.includes('ott')) dramaOtt(event)
   else if (event.message.text === '人氣排行') event.reply(flexPopular)
   else if (event.message.text === '最新排行') event.reply(flexNew)
   else if (event.message.text === 'OTT查詢') event.reply('請輸入 "ott+空格+影劇名"')

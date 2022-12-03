@@ -12,9 +12,10 @@ export default {
         contents: [
           {
             type: 'image',
-            url: 'https://movies.yahoo.com.tw/i/o/production/movies/November2022/nwaKmVU4FuHHmBWVVWsP-800x1185.jpg',
+            url: 'https://movies.yahoo.com.tw/i/o/production/movies/October2022/J98VRuWXLSEM42xOWZ5q-720x960.jpg',
             aspectMode: 'cover',
-            size: 'full'
+            size: 'full',
+            aspectRatio: '9:12'
           },
           {
             type: 'box',
@@ -25,16 +26,16 @@ export default {
               },
               {
                 type: 'text',
-                text: '財閥家的小兒子',
+                text: '你的婚姻不是你的婚姻-聖筊',
                 size: 'xl',
-                weight: 'bold',
-                color: '#ffffff'
+                color: '#ffffff',
+                wrap: true,
+                weight: 'bold'
               },
               {
                 type: 'filler'
               }
-            ],
-            height: '40px'
+            ]
           },
           {
             type: 'box',
@@ -50,7 +51,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '2022-11-18',
+                text: '2022-10-21',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -72,7 +73,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '16集',
+                text: '-',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -94,7 +95,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '7.9',
+                text: '-',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -116,7 +117,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '鄭大胤',
+                text: '田中健太、石井康晴、平野俊一',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -138,7 +139,7 @@ export default {
               },
               {
                 type: 'text',
-                text: '金泰姬',
+                text: '篠崎繪里子',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -164,7 +165,7 @@ export default {
                 color: '#ffffff',
                 size: 'sm',
                 flex: 5,
-                text: '宋仲基、李聖旻李星民、申鉉彬、金南喜、趙漢哲'
+                text: '平野紫耀、黑島結菜、三浦友和、山本耕史、坂東彌十郎、井之脇海、中村友理、宇野祥平、時任勇氣、船越英一郎'
               }
             ]
           },
@@ -182,7 +183,7 @@ export default {
               },
               {
                 type: 'text',
-                text: 'friDay影音',
+                text: 'friDay影音、KKTV',
                 wrap: true,
                 color: '#ffffff',
                 size: 'sm',
@@ -200,7 +201,7 @@ export default {
                 contents: [
                   {
                     type: 'text',
-                    text: 'OTT查詢',
+                    text: 'OTT連結',
                     align: 'center',
                     size: 'md',
                     color: '#E4F2ED',
@@ -213,7 +214,7 @@ export default {
                 action: {
                   type: 'message',
                   label: 'action',
-                  text: 'ott search'
+                  text: 'ott 詐欺獵人'
                 },
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -240,7 +241,7 @@ export default {
                 action: {
                   type: 'message',
                   label: 'action',
-                  text: '《財閥家的小兒子》是韓國JTBC在2022年11月推出的連續劇，改編自山景的同名網路小說，由《她很漂亮》、《W－兩個世界》的導演鄭大胤與《成均館緋聞》、《60天，指定倖存者》的編劇金泰姬合作打造，宋仲基、李聖旻、申鉉彬主演。此劇講述被誣陷私吞資金而被財閥家殺害的尹賢宇，重生後成為殺死自己的財閥家的小兒子，為了侵吞整個財閥家族，一步步成長並報仇的故事。'
+                  text: '世上分為三種詐欺師–詐騙他人錢財的「白鷺」，色誘欺騙異性的「紅鷺」，以及只吃白鷺和紅鷺、最凶惡的「黑鷺」。黑崎高志郎的父親慘遭詐騙，帶全家走上絕路，只有高志郎一人倖存。他從此決心學習騙術，要靠著千變萬化的偽裝身分及神乎其技的詐騙手法，以其人之道還治其人之身，向世上所有的詐欺師們復仇！'
                 },
                 offsetEnd: '0px',
                 justifyContent: 'center',

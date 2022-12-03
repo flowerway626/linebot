@@ -7,16 +7,16 @@ export default async (event) => {
   const dramaNums = []
   try {
     // 抓影劇網址編號
-    const countrys = ['台灣', '韓國', '中國', '美國', '日本', '英國']
-    // 影劇編號索引直
+    const countries = ['台灣', '韓國', '中國', '美國', '日本', '英國']
+    // 影劇編號索引值
     let dramaNumsEnd = 0
-    for (let i = 0; i < countrys.length; i++) {
-      const { data } = await axios.get(encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1`), {
+    for (let i = 0; i < countries.length; i++) {
+      const { data } = await axios.get(encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${countries[i]}&type_id=1`), {
         headers: {
           'Accept-Encoding': 'text/html'
         }
       })
-      const { data: data2 } = await axios.get(encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${countrys[i]}&type_id=1&sort=popular`), {
+      const { data: data2 } = await axios.get(encodeURI(`https://movies.yahoo.com.tw/category.html?region_id=${countries[i]}&type_id=1&sort=popular`), {
         headers: {
           'Accept-Encoding': 'text/html'
         }
@@ -46,7 +46,7 @@ export default async (event) => {
   let Num = ''
   try {
     for (let i = 0; i < dramaNums.length; i++) {
-      if (event.message.text === dramaNums[i].name) Num = dramaNums[i].num
+      if (dramaNums[i].name.includes(event.message.text)) Num = dramaNums[i].num
     }
     console.log('https://movies.yahoo.com.tw/movieinfo_main/' + Num)
     if (Num === '') {
@@ -100,8 +100,8 @@ export default async (event) => {
         contents: dramaMain
       }
     }
-    if (event.reply(reply2)) writejson(reply2, 'dramaInfo')
-    else event.reply('查無資料，請更換檢索條件')
+    writejson(reply2, 'dramaInfo')
+    event.reply(reply2)
   } catch (error) {
     console.error(error)
     console.log('error')
