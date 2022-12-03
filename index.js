@@ -1,6 +1,6 @@
 import 'dotenv/config'
 import linebot from 'linebot'
-import express from 'express'
+// import express from 'express'
 import dramaRank from './commands/dramaRank.js'
 import dramaInfo from './commands/dramaInfo.js'
 import dramaOtt from './commands/dramaOtt.js'
@@ -9,7 +9,7 @@ import flexNew from './flexs/flexNew.js'
 
 // process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0
 
-const app = express()
+// const app = express()
 
 const bot = linebot({
   channelId: process.env.CHANNEL_ID,
@@ -21,8 +21,10 @@ const bot = linebot({
 const countries = ['台灣', '韓國', '中國', '美國', '日本', '英國']
 const direction = `❖ 人氣排行 ⇒ 選擇國家 
 ⇒ TOP12 高人氣影劇
+
 ❖ 最新排行 ⇒ 選擇國家
 ⇒ TOP12 新播出影劇
+
 ❖ OTT查詢 ⇒ 
 影劇播出串流平台整理
 △ 點選排行榜可查看該劇的詳細資訊`
@@ -50,14 +52,15 @@ bot.on('message', event => {
   }
 })
 
-const linebotParser = bot.parser()
+// const linebotParser = bot.parser()
 
-app.post('/', linebotParser)
+// app.post('/', linebotParser)
 
-app.get('/', (req, res) => {
-  res.status(200).send('ok')
-})
+// app.get('/', (req, res) => {
+//   res.status(200).send('ok')
+// })
 
-app.listen(process.env.PORT || 3000, () => {
+// app.
+bot.listen('/', process.env.PORT || 3000, () => {
   console.log('動茲動呀動茲動')
 })

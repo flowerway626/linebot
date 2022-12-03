@@ -19,8 +19,16 @@ export default async (event) => {
       //     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
       //   }
       // }
-      const { data } = await axios.get(url1)
-      const { data: data2 } = await axios.get(url2)
+      const { data } = await axios.get(url1, {
+        headers: {
+          'Accept-Encoding': 'text/html'
+        }
+      })
+      const { data: data2 } = await axios.get(url2, {
+        headers: {
+          'Accept-Encoding': 'text/html'
+        }
+      })
       const $ = cheerio.load(data)
       const $$ = cheerio.load(data2)
       console.log($.html())
@@ -55,7 +63,11 @@ export default async (event) => {
       event.reply('SORRY！輸入錯誤 or 無法查詢，請輸入其他關鍵字')
       return
     }
-    const { data } = await axios.get('https://movies.yahoo.com.tw/movieinfo_main/' + Num)
+    const { data } = await axios.get('https://movies.yahoo.com.tw/movieinfo_main/' + Num, {
+      headers: {
+        'Accept-Encoding': 'text/html'
+      }
+    })
     const $ = cheerio.load(data)
     const dramaMain = []
     const replyFlex2 = JSON.parse(JSON.stringify(flexInfo))
