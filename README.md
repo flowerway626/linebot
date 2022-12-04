@@ -6,11 +6,11 @@ LINE ID：@122dlhcp<br>
 <img src="https://i.imgur.com/qWjxILm.png" width="200px" >
 
 # 連結網站：
-- Yahoo!電視影劇 台灣, 韓國, 中國, 美國, 日本, 英國的人氣排行 / 最新排行<br>
-https://movies.yahoo.com.tw/category.html?region_id=%E9%9F%93%E5%9C%8B&type_id=1<br>
-https://movies.yahoo.com.tw/category.html?region_id=%E9%9F%93%E5%9C%8B&type_id=1&sort=popular<br>
-- Yahoo!電視影劇 各戲劇介紹<br>
-https://movies.yahoo.com.tw/movieinfo_main/13439
+- Yahoo!電視影劇 台灣, 韓國, 中國, 美國, 日本, 英國的 人氣排行 or 最新排行<br>
+https://movies.yahoo.com.tw/category.html?region_id=韓國&type_id=1<br>
+https://movies.yahoo.com.tw/category.html?region_id=韓國&type_id=1&sort=popular<br>
+- Yahoo!電視影劇 該劇介紹資訊<br>
+https://movies.yahoo.com.tw/movieinfo_main/13439 (其中之一)
 
 - OTT影音搜尋<br>
 https://ott-search.com/
