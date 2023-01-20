@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 # 每隔 10 分鐘時
   schedule:
-    - cron: "10 0 * * *"
+    - cron: "*/10 0 * * *"
 # 執行的工作
 jobs:
   # 工作名稱
@@ -30,4 +30,3 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist
