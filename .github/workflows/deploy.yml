@@ -21,10 +21,10 @@ jobs:
         # 使用的 actions/checkout 複製程式碼
         uses: actions/checkout@v3
       # 步驟二：編譯
-      - name: Install and Build
+      - name: Install and dev
         run: |
           npm install
-          npm run build
+          npm run dev
       # 步驟三：部署
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
