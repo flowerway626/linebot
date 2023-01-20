@@ -24,7 +24,6 @@ jobs:
       - name: Install and dev
         run: |
           npm install
-          npm run dev
       # 步驟三：部署
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
